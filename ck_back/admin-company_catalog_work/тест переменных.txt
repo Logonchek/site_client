@@ -1,0 +1,27 @@
+ переменные Лимит товаров пакета - {region:packet_limit}
+				<br />
+				Срок действия пакета - {region:packet_lifetime}
+				<br />
+				Кол-во опубликованных товаров компании - {company:public_products_count}
+				<br />
+				Кол-во не опубликованных товаров компании - {company:no_public_products_count}
+				<br />
+				Кол-во просмотров - {company:stats_total_hits}
+				<br />
+				Кол-во посетителей - {company:stats_total_users}
+				<br />
+				Лимит товаров компании - {company:products_limit}
+				<br />
+				Кол-во посетителей СК в текущем месяце - {company:stats_visits_in_current_month}
+				<br />
+				Кол-во посетителей СК в предыдущем месяце - {company:stats_visits_in_prev_month}
+				<br />
+				ID компании - {company:id}
+				<br />
+				Название компании - {company:name}
+				<br />
+				Название пакета компании - {company:packet_title}
+				<br />
+				Количество доступных акций для публикации, в скобках укажите id пакета. - {company:paid_placement_expire_after}
+				<br />
+				Кол-во дней оставшееся до окончания платного размещения компании - {company:available_new_public_offers_count({company:packet_id})} 

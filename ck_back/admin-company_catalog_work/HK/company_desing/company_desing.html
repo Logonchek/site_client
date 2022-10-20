@@ -1,0 +1,204 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>МРедактор сайта</title>
+
+		<!-- мой шаблон -->
+		<link rel="stylesheet" href="https://www.pulscen.ru/system/ckeditor_assets/attachments/204266/template.css" />
+		<!-- futer -->
+		<link rel="stylesheet" href="https://www.pulscen.ru/system/ckeditor_assets/attachments/220420/futer.css" />
+		<!-- шрифт -->
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&family=Raleway&display=swap" rel="stylesheet" />
+		<!-- обнуление -->
+		<link rel="stylesheet" href="https://www.pulscen.ru/system/ckeditor_assets/attachments/204203/zeroing.css" />
+
+		<link rel="stylesheet" href="https://www.pulscen.ru/system/ckeditor_assets/attachments/226774/company_desing.css" />
+
+		<!-- <link rel="stylesheet" href="scss/company_desing.css" /> -->
+	</head>
+
+	<body>
+		<div class="main_content">
+			<!-- <div class="width300"></div> -->
+			<div class="content">
+				<!-- info-company -->
+				<section class="info-company">
+					<div class="info-company__about">
+						<div class="about__name">
+							<p class="note">Компания:</p>
+							<p class="text">{company:name}</p>
+						</div>
+						<div class="about__id">
+							<p class="note">id компании:</p>
+							<p class="text">{company:id}</p>
+						</div>
+					</div>
+
+					<div class="info-company__status">
+						<div class="name">
+							<p class="package text">
+								тариф:
+								<span class="package__user">
+									<!-- {company:packet_title} -->
+									Базовый
+								</span>
+							</p>
+						</div>
+
+						<div class="act">
+							<img class="img" src="https://www.pulscen.ru/system/ckeditor_assets/pictures/216030/content_vector.png" alt="" />
+							<a target="_blanr" href="https://www.pulscen.ru/about/packets" class="info-company__text section-link">
+								<span class="">посмотреть</span>
+								все тарифы
+							</a>
+						</div>
+					</div>
+				</section>
+
+				<!-- about -->
+				<section class="about">
+					<div class="contain">
+						<div class="section-h1 about__heading">Редактор сайта</div>
+						<div class="about__wrapper">
+							<!-- about__company -->
+							<div class="about__company">
+								<!-- company-tarif -->
+								<div class="company company-tarif">
+									<p>
+										Тариф:
+										<span class="company__tarif section-weight600">
+											<!-- {company:packet_title} -->
+											Базовый
+										</span>
+									</p>
+									<div class="company__all-tarif">
+										<img class="icon" src="https://www.pulscen.ru/system/ckeditor_assets/pictures/226109/content_vector.png" alt="" />
+										<a target="_blanr" href="https://www.pulscen.ru/about/packets" class="section-link text">Посмотреть все тарифы</a>
+									</div>
+								</div>
+								<!-- end -->
+								<!-- company-info -->
+								<div class="company company-info">
+									<p>Доступно 8 базовых шаблонов сайта</p>
+									<p>Настройки персонального дизайна сильно ограничены</p>
+									<p>
+										Отсутствует
+										поддержка
+										аккаунт-менеджера
+									</p>
+								</div>
+								<!-- end -->
+							</div>
+
+							<!-- about__company_mobil-info -->
+							<!-- <div class="about__company_mobil-info">
+								<div class="button text" id="button1" rel="popup1">
+									? Информация о тарифе {company:packet_title}
+									базовый
+								</div>
+							</div> -->
+							<!-- about__company_mobil -->
+							<div class="about__company about__company_mobil">
+								<!-- company-info -->
+								<div class="company company-info">
+									<p>Доступно 8 базовых шаблонов сайта</p>
+									<p>Настройки персонального дизайна сильно ограничены</p>
+									<p>
+										Отсутствует
+									поддержка
+										аккаунт-менеджера
+									</p>
+								</div>
+								<!-- end -->
+								<!-- company-consultant -->
+								<div class="company company-consultant">
+									<p class="consultant__name section-weight600">Елена Толстова</p>
+									<p class="consultant__position">специалист Пульса цен</p>
+									<div class="consultant__button section-buttonWhite button weight_600 ab-order js-apress-order-button js-orders-callback-link" data-button-type="order_callback" data-company="99572059 " data-company-id="99572059 " data-company-name="Пульс цен Онлайн" data-company-name-rest="" data-company-url="https://help.pulscen.ru/" data-params='{"company_id":"99572059 "}' data-statistics="1" data-type="callback">Задать вопрос</div>
+								</div>
+								<!-- end -->
+							</div>
+
+							<!-- about__consultant -->
+							<div class="about__consultant-wrapper">
+								<div class="about__consultant">
+									<img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/220784/content_content_small_1.png" alt="" />
+									<div class="consultant">
+										<div>
+											<p class="consultant__name">Елена Толстова</p>
+											<p class="consultant__position">специалист Пульса цен</p>
+										</div>
+										<div class="consultant__button section-buttonWhite button weight_600 ab-order js-apress-order-button js-orders-callback-link" data-button-type="order_callback" data-company="99572059 " data-company-id="99572059 " data-company-name="Пульс цен Онлайн" data-company-name-rest="" data-company-url="https://help.pulscen.ru/" data-params='{"company_id":"99572059 "}' data-statistics="1" data-type="callback">Задать вопрос</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="delimiter"></section>
+
+				<!-- setting -->
+				<section class="setting">
+					<div class="contain">
+						<div class="item-wrapper">
+							<div class="item">
+								<img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/226725/content_frame_190-3.png" alt="" />
+								<div class="item__text-wrapper">
+									<p class="item__heading section-weight600">Выбрать готовый шаблон сайта</p>
+									<p class="item__text">Вам дотсупно 8 базовых шаблонов. Для использования готового дизайна из премиальной библиотеки шаблонов, подключите платный пакет.</p>
+									<a href="/settings/template#free-scheme" class="section-link setting__link setting__link_end">Перейти к выбору шаблона</a>
+								</div>
+							</div>
+							<div class="item">
+								<img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/226727/content_frame_189-1.png" alt="" />
+								<div class="item__text-wrapper">
+									<p class="item__heading section-weight600">Настроить дизайн сайта вручную</p>
+									<p class="item__text">Оформите шапку сайта, настройте цветовое и фоновое оформление элементов сайта.</p>
+									<a href="/settings" class="section-link setting__link setting__link_end">Перейти к настройкам дизайна</a>
+								</div>
+							</div>
+							<div class="item">
+								<img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/226726/content_frame_190-2.png" alt="" />
+								<div class="item__text-wrapper">
+									<p class="item__heading section-weight600">Настроить мобильную версию сайта</p>
+									<p class="item__text">Настройки мобильной версии сайта недоступны на данном тарифе.</p>
+									<a href="/settings_mobile" class="section-link setting__link setting__link_end">Перейти к настройкам мобильной версии</a>
+								</div>
+							</div>
+							<div class="item">
+								<img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/226728/content_frame_190-1.png" alt="" />
+								<div class="item__text-wrapper item__text-wrapper_end">
+									<p class="setting__link item__heading section-weight600">Настроить меню сайта</p>
+									<p class="item__text">Настройте названия пунктов вертикального и горизонтального меню на сайте. Меняйте последовательность, добавляйте или скрывайте пункты меню.</p>
+									<a href="/admin/menu" class="setting__link section-link setting__link_end">Перейти в редактор меню</a>
+								</div>
+							</div>
+							<div class="item">
+								<img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/226729/content_frame_190.png" alt="" />
+								<div class="item__text-wrapper item__text-wrapper_end">
+									<p class="setting__link item__heading section-weight600">Оформить товарную витрину на сайте</p>
+									<a href="/settings/select_listing_style" class="setting__link section-link setting__link_prEnd">Выбрать вид товаров в каталоге</a>
+									<a href="/predl/binds#storefront" class="setting__link section-link setting__link_end">Настроить витрину на главной сайта</a>
+								</div>
+							</div>
+							<div class="item">
+								<img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/226730/content_frame_189.png" alt="" />
+								<div class="item__text-wrapper">
+									<p class="item__heading section-weight600">Заполнить разделы сайта</p>
+									<p class="item__text">Добавляйте акции, новости и статьи. Создавайте новые страницы и разделы. Расскажите клиентам как можно больше о вашей компании.</p>
+									<a href="/admin/company_customers" class="section-link setting__link setting__link_end">Перейти в раздел “Наполнение сайта”</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</body>
+</html>

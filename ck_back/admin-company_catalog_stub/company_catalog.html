@@ -1,0 +1,86 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Размещение товаров и услуг</title>
+
+		<!-- мой шаблон -->
+		<link rel="stylesheet" href="https://www.pulscen.ru/system/ckeditor_assets/attachments/204266/template.css" />
+		<!-- futer -->
+		<link rel="stylesheet" href="https://www.pulscen.ru/system/ckeditor_assets/attachments/220420/futer.css" />
+		<!-- шрифт -->
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&family=Raleway&display=swap" rel="stylesheet" />
+		<!-- обнуление -->
+		<link rel="stylesheet" href="https://www.pulscen.ru/system/ckeditor_assets/attachments/204203/zeroing.css" />
+
+		<link rel="stylesheet" href="https://www.pulscen.ru/system/ckeditor_assets/attachments/221759/company_cotalog.css" />
+
+		<!-- <link rel="stylesheet" href="scss/company_cotalog.css" /> -->
+	</head>
+
+	<body>
+		<div class="main_content">
+			<!-- <div class="width300"></div> -->
+			<div class="content">
+				<p class="heading">Размещение товаров и услуг</p>
+				<div class="placement">
+					<div class="section-block placement__block placement__block_add">
+						<div class="section-heading-block placement__heading">Добавить товары</div>
+						<div class="placement__btns">
+							<a href="http://{company:domain}/goods/new" class="section-btn placement__add">Добавить товар</a>
+							<a href="http://{company:domain}/predl/binds" class="section-btnWhite placement__edit">Редактор товаров</a>
+						</div>
+					</div>
+					<div class="section-block placement__block placement__block_download">
+						<div class="section-heading-block placement__heading">Загрузить товары</div>
+						<div class="placement__link">
+							<a class="section-link" href="http://{company:domain}/admin/import_xls#!/step0">XLS</a>
+							<a class="section-link" href="http://{company:domain}/admin/import_yml/edit">YML</a>
+						</div>
+					</div>
+					<div class="section-block placement__block placement__block_unload">
+						<div class="section-heading-block placement__heading">Выгрузить товары</div>
+						<div class="placement__link">
+							<a class="section-link" href="http://{company:domain}/admin/export">XLS</a>
+							<a class="section-link" href="http://{company:domain}/admin/export">YML</a>
+						</div>
+					</div>
+					<div class="section-block placement__block placement__block_integration">
+						<div class="section-heading-block placement__heading">
+							Интеграция
+							<span class="placement__br">с внешними сервисами</span>
+						</div>
+						<div class="placement__link">
+							<a class="section-link" href="http://{company:domain}/admin/synchronization#1c">1C</a>
+							<a class="section-link" href="http://{company:domain}/admin/synchronization#moysklad">МойСклад</a>
+							<a class="section-link" href="http://{company:domain}/admin/synchronization#yandex_models">Яндекс.Маркет</a>
+						</div>
+					</div>
+				</div>
+				<div class="setting">
+					<div class="section-block setting__block">
+						<div class="section-heading-block setting__heading">Настроить товарные группы</div>
+						<div class="section-subtitle-block setting__subtitle">Создавайте и редактируйте товарные пользовательские группы для удобства навигации по вашему каталогу</div>
+						<a class="section-link" href="http://{company:domain}/predl/groups">Перейти в редактор групп</a>
+					</div>
+					<div class="section-block setting__block">
+						<div class="section-heading-block setting__heading">
+							Настроить фильтры
+							<span class="setting__br">по характеристикам</span>
+						</div>
+						<div class="section-subtitle-block setting__subtitle">Фильтры по характеристикам помогут вашим покупателям быстрее найти нужный товар, а вам - получить больше заказов.</div>
+						<a class="section-link" href="http://{company:domain}/admin/facets">Настроить фильтры</a>
+					</div>
+
+					<div class="section-block setting__block setting__block_convertation">
+						<a class="section-link" href="http://{company:domain}/admin/currency_exchange">Конвертировать цены</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,303 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Размещение товаров и услуг</title>
+
+		<!-- мой шаблон -->
+		<link rel="stylesheet" href="https://www.pulscen.ru/system/ckeditor_assets/attachments/204266/template.css" />
+		<!-- futer -->
+		<link rel="stylesheet" href="https://www.pulscen.ru/system/ckeditor_assets/attachments/220420/futer.css" />
+		<!-- шрифт -->
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;800&family=Raleway&display=swap" rel="stylesheet" />
+		<!-- popap -->
+		<link rel="stylesheet" href="https://www.pulscen.ru/system/ckeditor_assets/attachments/226405/popap.css" />
+		<!-- обнуление -->
+		<link rel="stylesheet" href="https://www.pulscen.ru/system/ckeditor_assets/attachments/204203/zeroing.css" />
+
+		<link rel="stylesheet" href="https://www.pulscen.ru/system/ckeditor_assets/attachments/226779/company_cotalog.css" />
+
+		<!-- <link rel="stylesheet" href="scss/company_cotalog.css" /> -->
+	</head>
+
+	<body>
+		<div class="main_content">
+			<!-- <div class="width300"></div> -->
+			<div class="content">
+				<!-- about -->
+				<section class="info-company">
+					<div class="info-company__about">
+						<div class="about__name">
+							<p class="note">Компания:</p>
+							<p class="text">{company:name}</p>
+						</div>
+						<div class="about__id">
+							<p class="note">id компании:</p>
+							<p class="text">{company:id}</p>
+						</div>
+					</div>
+
+					<div class="info-company__status">
+						<div class="name">
+							<p class="package text">
+								тариф:
+								<span class="package__user">
+									{company:packet_title}
+									<!-- тариф -->
+								</span>
+							</p>
+						</div>
+
+						<div class="act">
+							<img class="img" src="https://www.pulscen.ru/system/ckeditor_assets/pictures/216030/content_vector.png" alt="" />
+							<a target="_blanr" href="https://www.pulscen.ru/about/packets" class="info-company__text section-weight600">
+								<span class="section-weight600">посмотреть</span>
+								все тарифы
+							</a>
+						</div>
+					</div>
+				</section>
+
+				<section class="about">
+					<div class="contain">
+						<div class="section-h1 about__heading">Товары и услуги</div>
+						<div class="about__wrapper">
+							<!-- about__company -->
+							<div class="about__company">
+								<!-- company-tarif -->
+								<div class="company company-tarif">
+									<p>
+										Тариф:
+										<span class="company__tarif section-weight600">
+											{company:packet_title}
+											<!-- базовый -->
+										</span>
+									</p>
+									<div class="company__all-tarif">
+										<img class="icon" src="https://www.pulscen.ru/system/ckeditor_assets/pictures/226109/content_vector.png" alt="" />
+										<a target="_blanr" href="https://www.pulscen.ru/about/packets" class="text">Посмотреть все тарифы</a>
+									</div>
+								</div>
+								<!-- end -->
+								<!-- company-info -->
+								<div class="company company-info">
+									<p>
+										Доступно к загрузке до {company:products_limit}
+										<!-- 10  -->
+										товаров
+									</p>
+									<p>В рубриках Пульса цен товары показываются после товаров компаний на платном пакете</p>
+									<p> Отсутствует поддержка аккаунт-менеджера </p>
+								</div>
+								<!-- end -->
+								<!-- company-goods -->
+								<div class="company company-goods">
+									<p class="text">Загружено товаров:</p>
+									<div class="company__load-goods">
+										{company:public_products_count}/{company:products_limit}
+										<!-- 0/10 -->
+									</div>
+								</div>
+								<!-- end -->
+							</div>
+
+							<!-- about__company_mobil-info -->
+							<div class="about__company_mobil-info">
+								<div class="button text" id="button1" rel="popup1">
+									? Информация о тарифе
+									<!-- {company:packet_title} -->
+									базовый
+								</div>
+							</div>
+							<!-- about__company_mobil -->
+							<div class="about__company about__company_mobil">
+								<!-- company-info -->
+								<div class="company company-info">
+									<p>Доступно к загрузке до 10 товаров</p>
+									<p>В рубриках Пульса цен товары показываются после товаров компаний на платном пакете</p>
+									<p> Отсутствует поддержка аккаунт-менеджера </p>
+								</div>
+								<!-- end -->
+								<!-- company-goods -->
+								<div class="company company-goods">
+									<p class="text">Загружено товаров:</p>
+									<div class="company__load-goods">
+										{company:public_products_count}/{company:products_limit}
+										<!-- 0/10 -->
+									</div>
+								</div>
+								<!-- end -->
+								<!-- company-consultant -->
+								<div class="company company-consultant">
+									<p class="consultant__name section-weight600">Елена Толстова</p>
+									<p class="consultant__position">специалист Пульса цен</p>
+									<div class="consultant__button section-buttonWhite button weight_600 ab-order js-apress-order-button js-orders-callback-link" data-button-type="order_callback" data-company="99572059 " data-company-id="99572059 " data-company-name="Пульс цен Онлайн" data-company-name-rest="" data-company-url="https://help.pulscen.ru/" data-params='{"company_id":"99572059 "}' data-statistics="1" data-type="callback">Задать вопрос</div>
+								</div>
+								<!-- end -->
+							</div>
+
+							<!-- about__consultant -->
+							<div class="about__consultant-wrapper">
+								<div class="about__consultant">
+									<img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/220784/content_content_small_1.png" alt="" />
+									<div class="consultant">
+										<div>
+											<p class="consultant__name">Елена Толстова</p>
+											<p class="consultant__position">специалист Пульса цен</p>
+										</div>
+										<div class="consultant__button section-buttonWhite button weight_600 ab-order js-apress-order-button js-orders-callback-link" data-button-type="order_callback" data-company="99572059 " data-company-id="99572059 " data-company-name="Пульс цен Онлайн" data-company-name-rest="" data-company-url="https://help.pulscen.ru/" data-params='{"company_id":"99572059 "}' data-statistics="1" data-type="callback">Задать вопрос</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="delimiter"></section>
+
+				<!-- placement -->
+				<section class="placement">
+					<div class="contain">
+						<div class="section-h2 placement__heading">Размещение и редактирование товаров и услуг</div>
+						<div class="placement__item">
+							<a href="/goods/new" class="item section-link-block">
+								<!-- <div class="section-question"></div> -->
+								<img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/226603/content_frame_180.png" alt="" />
+								<p class="section-corporateColor item__text">Добавить товар</p>
+							</a>
+							<a href="/predl/binds" class="item section-link-block">
+								<!-- <div class="section-question"></div> -->
+								<img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/226602/content_frame_181.png" alt="" />
+								<p class="section-corporateColor item__text">Редактировать товары</p>
+							</a>
+							<a href="/admin/currency_exchange" class="item section-link-block">
+								<img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/226601/content_frame_182.png" alt="" />
+								<p class="section-corporateColor item__text item__text-ConDeks">Конвертировать цены</p>
+								<p class="section-corporateColor item__text item__text-ConModil">
+									Конвертиро-
+									<br />
+									вать цены
+								</p>
+							</a>
+						</div>
+						<div class="placement__item placement__item_2">
+							<div class="item">
+								<p class="item__heading">Загрузить товары</p>
+								<div class="item__list">
+									<a class="item__link" href="/admin/import_xls#!/step0">XLS</a>
+									<a class="item__link" href="/admin/import_yml/edit">YML</a>
+								</div>
+							</div>
+							<div class="item">
+								<!-- <div class="section-question"></div> -->
+								<p class="item__heading">Интеграция с внешними сервисами</p>
+								<div class="item__list">
+									<a class="item__link" href="/admin/synchronization#1c">1C</a>
+									<a class="item__link" href="/admin/synchronization#moysklad">МойСклад</a>
+								</div>
+							</div>
+							<a href="/admin/export" class="item section-link-block">
+								<img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/226600/content_frame_183.png" alt="" />
+								<p class="section-corporateColor item__text">Выгрузить товары и группы в XLS/YML</p>
+							</a>
+						</div>
+					</div>
+				</section>
+
+				<section class="delimiter"></section>
+
+				<section class="setting">
+					<div class="contain">
+						<p class="section-h2">Настройка каталога</p>
+						<div class="item-wrapper">
+							<div class="item">
+								<img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/226504/content_frame_190.png" alt="" />
+								<div class="item__text-wrapper">
+									<p class="item__heading section-weight600">Редактировать товарный каталог</p>
+									<p class="item__text">Создавайте и редактируйте товарные пользовательские группы для удобства навигации по вашему каталогу.</p>
+									<a href="/predl/groups" class="section-link setting__link setting__link_end">Перейти в редактор товарных групп</a>
+								</div>
+							</div>
+							<div class="item">
+								<img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/226505/content_frame_189.png" alt="" />
+								<div class="item__text-wrapper">
+									<p class="item__heading section-weight600">Настроить фильтры по характеристикам</p>
+									<p class="item__text">Фильтры по характеристикам помогут вашим покупателям быстрее найти нужный товар, а вам - получить больше заказов.</p>
+									<a href="/admin/facets" class="section-link setting__link setting__link_end">Включить отображение фильтров</a>
+								</div>
+							</div>
+							<div class="item">
+								<img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/226506/content_frame_190_1.png" alt="" />
+								<div class="item__text-wrapper item__text-wrapper_end">
+									<p class="setting__link item__heading section-weight600">Оформить товарную витрину на сайте</p>
+									<a href="/settings/select_listing_style" class="setting__link section-link setting__link_prEnd">Выбрать вид товаров в каталоге</a>
+									<a href="/predl/binds#storefront" class="setting__link section-link setting__link_end">Настроить витрину на главной сайта</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<div class="modal-wrapper">
+						<div class="modal-wrapper-block" data-popup="popup1">
+							<div class="modal-block">
+								<img class="modal-close" src="https://www.pulscen.ru/system/ckeditor_assets/pictures/219819/content_cancel.png" alt="" />
+								<div class="modal-content">
+									<!-- ? Информация о тарифе -->
+									{company:packet_title} базовый
+								</div>
+								<div class="modal-text">
+									Доступно к загрузке до {company:products_limit}
+									<!-- 10 -->
+									товаров
+								</div>
+								<div class="modal-text">Товары не показываются в рубриках</div>
+								<div class="modal-text">Отсутствует поддержка аккаунт-менеджера</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				переменные Лимит товаров пакета - {region:packet_limit}
+				<br />
+				Срок действия пакета - {region:packet_lifetime}
+				<br />
+				Кол-во опубликованных товаров компании - {company:public_products_count}
+				<br />
+				Кол-во не опубликованных товаров компании - {company:no_public_products_count}
+				<br />
+				Кол-во просмотров - {company:stats_total_hits}
+				<br />
+				Кол-во посетителей - {company:stats_total_users}
+				<br />
+				Лимит товаров компании - {company:products_limit}
+				<br />
+				Кол-во посетителей СК в текущем месяце - {company:stats_visits_in_current_month}
+				<br />
+				Кол-во посетителей СК в предыдущем месяце - {company:stats_visits_in_prev_month}
+				<br />
+				ID компании - {company:id}
+				<br />
+				Название компании - {company:name}
+				<br />
+				Название пакета компании - {company:packet_title}
+				<br />
+				Количество доступных акций для публикации, в скобках укажите id пакета. - {company:paid_placement_expire_after}
+				<br />
+				Кол-во дней оставшееся до окончания платного размещения компании - {company:available_new_public_offers_count({company:packet_id})}
+				<br />
+				Лимит товаров пакета, укажите ID пакета: - {region:packet_limit(ID)}
+				<br />
+				{region:packet_limit({company:packet_title})}
+			</div>
+		</div>
+		<!-- popap -->
+		<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+		<script src="https://www.pulscen.ru/system/ckeditor_assets/attachments/221470/popap.js"></script>
+	</body>
+</html>

@@ -1,0 +1,206 @@
+include ../../miksins.pug
+
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+		title= "главная"
+	body
+		.main-content
+			<div class="width314px"></div>
+			.home
+				section.action-cards
+
+					+card("{crm_analytics:click_link(,http://{company:domain}/admin/company_catalog?utm_source=CK&utm_medium=glav&utm_campaign=rasmest_tovar,want_orders,СК_Гл.товары)}",
+					"https://www.pulscen.ru/system/ckeditor_assets/pictures/215962/content_ikonka_tovarov.png", 
+					"Разместить товары", 
+					"38 млн", 
+					"товаров от", 
+					"809 тыс. поставщиков", 
+					"",
+					"http://{company:domain}/admin/company_catalog?utm_source=CK&utm_medium=glav&utm_campaign=rasmest_tovar")
+
+					+card("{crm_analytics:click_link(,http://{company:domain}/admin/advanced?utm_source=CK&utm_medium=glav&utm_campaign=zayvki,want_orders,СК_ГЛ.закупки)}","https://www.pulscen.ru/system/ckeditor_assets/pictures/215959/content_ikonka_zayavok.png", "Получить готовые заявки", "73 тыс", "заявок на Закупку", "", '', "http://{company:domain}/admin/advanced?utm_source=CK&utm_medium=glav&utm_campaign=zayvki")
+
+					+card("{crm_analytics:click_link(,http://{company:domain}/admin/company_design?utm_source=CK&utm_medium=glav&utm_campaign=create_site,want_orders,СК_Гл.создать_сайт)}","https://www.pulscen.ru/system/ckeditor_assets/pictures/215961/content_ikonka_sayta.png", "Редактировать сайт", "750 тыс.", "готовых сайтов", "", '', 'http://{company:domain}/admin/company_design?utm_source=CK&utm_medium=glav&utm_campaign=create_site')
+
+					+card("{crm_analytics:click_link(,http://{company:domain}/admin/company_reklama,want_orders,Запустить рекламу)}","https://www.pulscen.ru/system/ckeditor_assets/pictures/215960/content_ikonka_reklamy.png", "Запустить рекламу", "5 млн.", "аудитория Пульса цен", "Яндекс, Google", "text-bold")
+				// !help
+				section.help
+					.help__columns-wrapper
+						.help__slider-block
+							p.help__heading.container Как Пульс цен помогает Бизнесу продавать
+							.help__columns-relevativ.swiper.swiper-home
+								.button
+									#button__left.button__left
+										img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/216808/content_arrow_6.png' alt='')
+									#button__ridth.button__ridth
+										img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/216809/content_arrow_z6.png' alt='')
+								#help__columns_js.help__columns.swiper-wrapper
+									// case zero
+									#sliderCase_js.sliderCase_js.help__case.swiper-slide
+										.help__title
+											span(style='width: 70%; display: block') Комплексная программа продвижения
+										.help__enters.help__enters_one.container
+											p
+												| Размещение в каталоге на тарифе
+												a.accent(href='https://www.pulscen.ru/about/packets?utm_source=CK&utm_medium=glav&utm_campaign=Price') Серебро.Старт
+											p рекламный баннер на портале Пульс цен
+											p баннер в Рекламной сети Яндекса
+										.container.help__result.help__result_zero
+											p.help__result_zero_text рост просмотров в 7,2 раза
+											p рост посетителей в 6,8 раз
+										#help_schedule_js.help_schedule
+											img.help__img.help__img_zero(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/218662/content_grafik_zero.png' alt='')
+											img.help__img.help__img_three.help__img_modil(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/218663/content_grafik_zero_mobil.png' alt='')
+									// end
+									// case one
+									#sliderCase_js.sliderCase_js.help__case.swiper-slide
+										.help__title
+											span(style='width: 57%; display: block') Усиление продаж в сезон
+										.help__enters.help__enters_one.container
+											p
+												| Размещение в каталоге на тарифе
+												a.accent(href='https://www.pulscen.ru/about/packets?utm_source=CK&utm_medium=glav&utm_campaign=Price') Серебро.Старт
+											p 2 товара в Премиум-блоке
+											p баннер в Рекламной сети Яндекса
+										.container.help__result.help__result_one
+											p более 3 000 просмотров в пик сезона
+										#help_schedule_js.help_schedule
+											img.help__img.help__img_one(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/217114/content_grafik_1.png' alt='')
+											img.help__img.help__img_three.help__img_modil(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/217554/content_grafik_mobil_1.png' alt='')
+									// end
+									// case two
+									#sliderCase_js.sliderCase_js.help__case.swiper-slide
+										.help__title
+											span(style='width: 55%; display: block') Выход в новые регионы
+										.help__enters.help__enters_two.container
+											p
+												| Размещение в каталоге на тарифе 
+												a.accent(href='https://www.pulscen.ru/about/packets?utm_source=CK&utm_medium=glav&utm_campaign=Price') Золото.Старт
+												| 												в Москве
+											p
+												| Подлючен региональный кластер 
+												span.accent(style='color: #5e7491; font-weight: 800') Москва и ЦФО
+											div
+												p.help__enters_two-fw
+													| Подключен региональный кластер 
+													span.accent(style='color: #5e7491; font-weight: 800') Поволжье 
+												.help__result.help__result_two
+													p 86 городов дополнительного продвижения
+													p более 2 000 посетителей сайта из регионов
+										#help_schedule_js.help_schedule
+											img.help__img.help__img_two(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/221413/content_group_532.png' alt='')
+											img.help__img.help__img_three.help__img_modil(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/217553/content_grafik_mobil_2.png' alt='')
+									// end
+									// case three
+									#sliderCase_js.sliderCase_js.help__case.swiper-slide
+										.help__title
+											span(style='width: 49%; display: block') Быстрый старт продаж
+										.help__enters.help__enters_three.container
+											p
+												| Размещение в каталоге на тарифе
+												a.accent(href='https://www.pulscen.ru/about/packets?utm_source=CK&utm_medium=glav&utm_campaign=Price') Платина.Старт
+											p
+												| Контекстная реклама ваших товаров, настроенная на целевые запросы в Яндекс и Google.
+										.container.help__result.help__result_three
+											p просмотры товаров уже в первый месяц размещения
+										#help_schedule_js.help_schedule
+											img.help__img.help__img_three(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/216957/content_grafik2.png' alt='')
+											img.help__img.help__img_three.help__img_modil(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/217555/content_grafik_mobil_3.png' alt='')
+									// end
+							.feedback
+								a.heading_Button(href='https://www.pulscen.ru/about/packets?utm_source=CK&utm_medium=glav&utm_campaign=Price') Подобрать вариант размещения
+								.heading_Button_white.ab-order.js-apress-order-button.js-orders-callback-link(data-button-type='order_callback' data-company='99572059 ' data-company-id='99572059 ' data-company-name='Пульс цен Онлайн' data-company-name-rest='' data-company-url='https://help.pulscen.ru/' data-params='{"company_id":"99572059 "}' data-statistics='1' data-type='callback') {crm_analytics:click_link(Заказать консультацию,#order,want_orders,Консультация_реклама)}
+						.consultation
+							p.title-h2 Задайте вопрос специалисту
+							//
+								<p class="title-h2">Задайте вопрос специалисту</p>
+								<div class="consultation__block">
+								<img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/220784/content_content_small_1.png" alt="" />
+								<div class="consultation__text">
+								<div class="consultation__text-bold">Елена Толстова</div>
+								<div class="">Специалист Пульса цен</div>
+								</div>
+								</div>
+								<div class="correspondence">
+								<div class="message correspondence__hello">Здравствуйте!</div>
+								<div class="message correspondence__interesting"> Напишите, если Вам интересно, но не очень понятно, и мы вместе разберемся со всеми трудностями :) </div>
+								</div>
+							#onlineSupportContainer.consultant
+				// !integration
+				section.integration.contant
+					p.integration__title Интеграция с сервисами
+					img.integration__img-mobil(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/217563/content_illyustratsiya_dlya_integratsiy.png' alt='')
+					.integration__services
+						.integration__services-item
+							a(target='_blank' href='https://www.pulscen.ru/online-shop/integration?utm_source=CK&utm_medium=glav&utm_campaign=Integracii#payment')
+								p.accent Оплата
+							p.text
+								a.section-link(href='http://www.pulscen.ru/online-shop/paykeeper' target='_blank' rel='noopener noreferrer') Paykeeper
+								| 								,
+								a.section-link(href='https://www.pulscen.ru/online-shop/sber' target='_blank' rel='noopener noreferrer') Интернет-эквайринг Сбербанка
+								| 								,
+								a.section-link(href='https://www.pulscen.ru/online-shop/alfa' target='_blank' rel='noopener noreferrer') Интернет-эквайринг Альфабанка
+						.integration__services-item
+							a(href='https://www.pulscen.ru/online-shop/integration?utm_source=CK&utm_medium=glav&utm_campaign=Integracii#delivery' target='_blank')
+								p.accent Доставка
+							p.text
+								a.section-link(href='https://www.pulscen.ru/online-shop/boxberry' target='_blank' rel='noopener noreferrer') Boxberry
+								| 								,
+								a.section-link(href='https://www.pulscen.ru/online-shop/dellin' target='_blank' rel='noopener noreferrer') Деловые линии
+								| 								,
+								a.section-link(href='https://www.pulscen.ru/online-shop/pochta' target='_blank' rel='noopener noreferrer') Почта России
+								| 								,
+								a.section-link(href='https://www.pulscen.ru/online-shop/sdek' target='_blank' rel='noopener noreferrer') СДЭК
+								| 								,
+								a.section-link(href='https://www.pulscen.ru/online-shop/pec' target='_blank' rel='noopener noreferrer') ПЭК
+								| 								,
+								a.section-link(href='https://www.pulscen.ru/online-shop/baikalsr' target='_blank' rel='noopener noreferrer') Байкал-Сервис
+						.integration__services-item
+							a(href='https://www.pulscen.ru/online-shop/integration?utm_source=CK&utm_medium=glav&utm_campaign=Integracii#communication' target='_blank' rel='noopener noreferrer')
+								p.accent Коммуникации с покупателями
+							p.text
+								a.section-link(href='https://www.pulscen.ru/online-shop/redhelper' target='_blank' rel='noopener noreferrer') RedHelper
+								| 								,
+								a.section-link(href='https://www.pulscen.ru/online-shop/jivosite' target='_blank' rel='noopener noreferrer') JivoSite
+								| 								,
+								a.section-link(href='https://www.pulscen.ru/online-shop/livetex' target='_blank' rel='noopener noreferrer') LiveTex
+						.integration__services-item
+							a(href='https://www.pulscen.ru/online-shop/integration?utm_source=CK&utm_medium=glav&utm_campaign=Integracii#oneC' target='_blank' rel='noopener noreferrer')
+								p.accent Интеграция с учетными системами
+							p.text
+								a.section-link(href='https://www.pulscen.ru/online-shop/1c' target='_blank' rel='noopener noreferrer') 1С
+								| 								,
+								a.section-link(href='https://www.pulscen.ru/online-shop/moysklad' target='_blank' rel='noopener noreferrer') МойCклад
+						.integration__services-item
+							a(href='https://www.pulscen.ru/online-shop/integration?utm_source=CK&utm_medium=glav&utm_campaign=Integracii#crm' target='_blank' rel='noopener noreferrer')
+								p.accent Интеграция с CRM
+							p.text
+								a.section-link(href='https://www.pulscen.ru/online-shop/amo' target='_blank' rel='noopener noreferrer') amoCRM
+								| 								,
+								a.section-link(href='https://www.pulscen.ru/online-shop/bitrix24' target='_blank' rel='noopener noreferrer') CRM Битрикс24
+					.feedback
+						.heading_Button_white
+							a(href="https://www.pulscen.ru/online-shop/integration?utm_source=CK&utm_medium=glav&utm_campaign=Integracii", target="_blank", rel="noopener noreferrer") Узнать больше об интеграциях
+						img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/217563/content_illyustratsiya_dlya_integratsiy.png' alt='')
+		script(type='text/javascript').
+			window.MeTalkSetup = { domain: 'comkc.pulscen.ru' };
+			(function (d, w, m) {
+			window.supportAPIMethod = m;
+			var s = d.createElement('script');
+			s.type = 'text/javascript';
+			s.id = 'supportScript';
+			s.charset = 'utf-8';
+			s.async = true;
+			var id = '9e71060b780fc267cbbfff6f8dec56ba';
+			s.src = '//me-talk.ru/support/support.js?h=' + id;
+			var sc = d.getElementsByTagName('script')[0];
+			w[m] =
+			w[m] ||
+			function () {
+			(w[m].q = w[m].q || []).push(arguments);
+			};
+			if (sc) sc.parentNode.insertBefore(s, sc);
+			else d.documentElement.firstChild.appendChild(s);
+			})(document, window, 'MeTalk');

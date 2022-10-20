@@ -1,0 +1,400 @@
+doctype html
+// @format
+html(lang='ru')
+	head
+		meta(charset='UTF-8')
+		meta(name='viewport' content='width=device-width, initial-scale=1.0')
+		title Размещение товаров и услуг
+		// мой шаблон
+		link(rel='stylesheet' href='https://www.pulscen.ru/system/ckeditor_assets/attachments/275566/template.css')
+		// futer
+		link(rel='stylesheet' href='https://www.pulscen.ru/system/ckeditor_assets/attachments/220420/futer.css')
+		// шрифт
+		link(href='https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap' rel='stylesheet')
+		link(href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;800&family=Raleway&display=swap' rel='stylesheet')
+		// popap
+		link(rel='stylesheet' href='https://www.pulscen.ru/system/ckeditor_assets/attachments/226405/popap.css')
+		// обнуление
+		link(rel='stylesheet' href='https://www.pulscen.ru/system/ckeditor_assets/attachments/204203/zeroing.css')
+		link(rel='stylesheet' href='https://www.pulscen.ru/system/ckeditor_assets/attachments/242601/company_cotalog.css')
+		// <link rel="stylesheet" href="scss/css/company_cotalog.css" />
+	body
+		.main_content
+			// <div class="width300"></div>
+			.content-wrapper
+				// about
+				section.info-company
+					.info-company__about
+						.about__name
+							p.note Компания:
+							p.text {company:name}
+						.about__id
+							p.note id компании:
+							p.text {company:id}
+					.info-company__status
+						.name
+							p.package.text
+								| тариф:
+								span.package__user {company:packet_title}
+									//- | тариф
+						.act
+							img.img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/216030/content_vector.png' alt='')
+							a.info-company__text.section-weight600(target='_blanr' href='https://www.pulscen.ru/about/packets')
+								span.section-weight600 посмотреть
+								| 								все тарифы
+				section.about
+					.container
+						.section-h1.about__heading Товары и услуги
+						.about__wrapper
+							// about__company
+							.about__company
+								// company-tarif
+								.company.company-tarif
+									p
+										| Тариф:
+										span.company__tarif.section-weight600 {company:packet_title}
+											//- | базовый
+									.company__all-tarif
+										img.icon(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/226109/content_vector.png' alt='')
+										a.text(target='_blanr' href='https://www.pulscen.ru/about/packets') Посмотреть все тарифы
+								// end
+								// company-info
+								.company.company-info
+									p  Доступно к загрузке до {company:products_limit}
+										//- | 10 товаров
+									p
+										| В рубриках Пульса цен товары показываются после товаров компаний на платном пакете
+									p
+										| Отсутствует 
+										a.section-link(href='') поддержка
+										|  аккаунт-менеджера
+								// end
+								// company-goods
+								.company.company-goods
+									p.text Загружено товаров:
+									.company__load-goods  {company:public_products_count}/{company:products_limit}
+										//- | 0/10
+								// end
+								// about__company_mobil-info
+								.about__company_mobil-info
+									#button1.button.text(rel='popup1')
+										| ? Информация о тарифе {company:packet_title}
+										//- | базовый
+								// about__company_mobil
+								.about__company.about__company_mobil
+									// company-info
+									.company.company-info
+										p Доступно к загрузке до 10 товаров
+										p
+											| В рубриках Пульса цен товары показываются после товаров компаний на платном пакете
+										p
+											| Отсутствует 
+											a.section-link(href='') поддержка
+											|  аккаунт-менеджера
+									// end
+									// company-goods
+									.company.company-goods
+										p.text Загружено товаров:
+										.company__load-goods {company:public_products_count}/{company:products_limit}
+											//- | 0/10
+									// end
+									// company-consultant
+									.company.company-consultant
+										p.consultant__name.section-weight600 Елена Толстова
+										p.consultant__position специалист Пульса цен
+										.consultant__button.section-buttonWhite.button.weight_600.ab-order.js-apress-order-button.js-orders-callback-link(data-button-type='order_callback' data-company='99572059 ' data-company-id='99572059 ' data-company-name='Пульс цен Онлайн' data-company-name-rest='' data-company-url='https://help.pulscen.ru/' data-params='{"company_id":"99572059 "}' data-statistics='1' data-type='callback') Задать вопрос
+									// end
+									// about__consultant
+									.about__consultant-wrapper
+										.about__consultant
+											img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/220784/content_content_small_1.png' alt='')
+											.consultant
+												div
+													p.consultant__name Елена Толстова
+													p.consultant__position специалист Пульса цен
+												.consultant__button.section-buttonWhite.button.weight_600.ab-order.js-apress-order-button.js-orders-callback-link(data-button-type='order_callback' data-company='99572059 ' data-company-id='99572059 ' data-company-name='Пульс цен Онлайн' data-company-name-rest='' data-company-url='https://help.pulscen.ru/' data-params='{"company_id":"99572059 "}' data-statistics='1' data-type='callback') Задать вопрос
+				section.delimiter
+				// placement
+				section.placement
+					.content
+						.section-h2.placement__heading Размещение и редактирование товаров и услуг
+						.placement__item
+							a.item.section-link-block(href='/goods/new')
+								// <div class="section-question"></div>
+								img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/226603/content_frame_180.png' alt='')
+								p.section-corporateColor.item__text Добавить товар
+							a.item.section-link-block(href='/predl/binds')
+								// <div class="section-question"></div>
+								img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/226602/content_frame_181.png' alt='')
+								p.section-corporateColor.item__text Редактировать товары
+							a.item.section-link-block(href='/admin/currency_exchange')
+								img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/226601/content_frame_182.png' alt='')
+								p.section-corporateColor.item__text.item__text-ConDeks Конвертировать цены
+								p.section-corporateColor.item__text.item__text-ConModil
+									| Конвертиро-
+									br
+									| 									вать цены
+						.placement__item.placement__item_2
+							.item
+								p.item__heading Загрузить товары
+								.item__list
+									a.item__link(href='/admin/import_xls#!/step0') XLS
+									a.item__link(href='/admin/import_yml/edit') YML
+							.item
+								// <div class="section-question"></div>
+								p.item__heading Интеграция с внешними сервисами
+								.item__list
+									a.item__link(href='/admin/synchronization#1c') 1C
+									a.item__link(href='/admin/synchronization#moysklad') МойСклад
+							a.item.section-link-block(href='/admin/export')
+								img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/226600/content_frame_183.png' alt='')
+								p.section-corporateColor.item__text Выгрузить товары и группы в XLS/YML
+				section.delimiter
+				section.setting
+					.content
+						p.section-h2 Настройка каталога
+						.item-wrapper
+							.item
+								img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/226504/content_frame_190.png' alt='')
+								.item__text-wrapper
+									p.item__heading.section-weight600 Редактировать товарный каталог
+									p.item__text
+										| Создавайте и редактируйте товарные пользовательские группы для удобства навигации по вашему каталогу.
+									a.section-link.setting__link.setting__link_end(href='/predl/groups') Перейти в редактор товарных групп
+							.item
+								img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/226505/content_frame_189.png' alt='')
+								.item__text-wrapper
+									p.item__heading.section-weight600 Настроить фильтры по характеристикам
+									p.item__text
+										| Фильтры по характеристикам помогут вашим покупателям быстрее найти нужный товар, а вам - получить больше заказов.
+									a.section-link.setting__link.setting__link_end(href='/admin/facets') Включить отображение фильтров
+							.item
+								img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/226506/content_frame_190_1.png' alt='')
+								.item__text-wrapper.item__text-wrapper_end
+									p.setting__link.item__heading.section-weight600 Оформить товарную витрину на сайте
+									a.setting__link.section-link.setting__link_prEnd(href='/settings/select_listing_style') Выбрать вид товаров в каталоге
+									a.setting__link.section-link.setting__link_end(href='/predl/binds#storefront') Настроить витрину на главной сайта
+				section.delimiter
+				// почему пульс цен
+				section.why-wrapper
+					.content
+						.why
+							.tabs.section-h2
+								.tabs__item.activ-tab(data-btn='btn')
+									| Почему выгодно разместить 
+									br
+									| 									товары на Пульсе цен
+									.line.line-activ(data-line='btn')
+								.tabs__item(data-btn='btn2')
+									| Как мои товары увидят покупатели
+									.line(data-line='btn2')
+							.block-wrapper
+								.blockr.block_activ(data-content='btn')
+									p.block__heading.section-h1 Пульс цен
+									p.block__subtitle
+										| крупнейшая промышленная торговая площадка для B2B-продаж в России 
+										br
+										| 										и за ее пределами. Площадка первого выбора для профессиональных снабженцев.
+									.options
+										.options__item
+											span.section-h1.section-corporateColor  > 6 500 000
+											p
+												| ежемесячная посещаемость, только целевые покупатели с Пульса цен, из Яндекса и Google.
+											img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/242187/content_user_3_1.png' alt='')
+										.options__item
+											span.section-h1.section-corporateColor  > 1 000
+											p
+												| товарных рубрик, среди которых легко подобрать максимально подходящие вашему ассортименту.
+											img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/242188/content_delivery-box_1.png' alt='')
+										.options__item
+											span.section-h1.section-corporateColor.accent  259
+											p
+												| площадок на базе портала в России, Казахстане, Белоруссии и Украины: почти в каждом городе есть Пульс цен
+											img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/242189/content_union.png' alt='')
+									a.section-buttonWhite(href='https://www.pulscen.ru/about/packets') Посмотреть тарифы на размещение
+								.complex.blockr(data-content='btn2')
+									.block
+										.wrapper-item
+											.item
+												img.item__img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/242227/content_group_625.png' alt='')
+												div
+													.section-h2.item__heading  Оптимизированный товарный каталог 
+													.item__text.item__subtitle Покупатели попадают в рубрики Пульса цен по целевым запросам из Яндекса и Google
+											.item
+												img.item__img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/242228/content_group_626.png' alt='')
+												div
+													.section-h2.item__heading  Дизайн сайта 
+													.item__text.item__subtitle
+														| В рубрике покупатель выбирает товар среди поставщиков по критериям привлекательной цены, условий продажи и описанию товаров
+											.item
+												img.item__img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/242229/content_group_657.png' alt='')
+												div
+													.section-h2.item__heading  Продвижение сайта 
+													.item__text.item__subtitle
+														| Позиция товара зависи от тарифа размещения. Чем выше товар в рубрике, тем больше шансов привлечь внимание покупателя и получить заказ.
+											.wrapper-item__line
+										.tarif
+											| Товары компаний на бесплатном тарифе “Базовый” находятся в каталоге ниже компаний на платных пакетах и чаще всего не попадают на первые страницы выдачи.
+										.complex__btns
+											a.section-buttonWhite(href=' https://www.pulscen.ru/about/packets')  Посмотреть тарифы на размещение
+				// tarif
+				section.efficiency
+					.content
+						.section-h1.efficiency__heading С чего начать создание сайта
+						.efficiency__subtitle
+							| Ознакомьтесь с возможностями более высоких тарифов, чтобы выбрать выгодное размещение под свои задачи
+						.bloks
+							.bloks__item.bloks__item-2.bloks__item-accent
+								.bloks__heading.bloks__heading-accent.section-h2 Тариф “Старт”
+								p.bloks__subtitle.bloks__subtitle-accent
+									| Для выгодного старта на Пульсе цен. Продвигайте товары и услуги в своём регионе.
+								.bloks__line.bloks__line-accent
+								.bloks__text.bloks__text-accent
+									p.section-600 Доступно от 500 до 5 000 товаров
+									p Помощь в загрузке и оформлении товаров
+									p Проработка приоритетных товаров специалистами Пульса цен
+									p
+										| Доступ к базе готовых заказов “
+										a.section-link(href='') Закупки
+										| ”
+									a.note-accent(href='https://www.pulscen.ru/about/packets' target='_blank') и другие услуги...
+							.bloks__item.bloks__item-1
+								p.bloks__heading.section-h2 Тариф “Бизнес”
+								p.bloks__subtitle
+									| Продавайте товары и услуги в несколько регионов и подключайте полезные интеграции для более эффективного продвижения товаров и услуг
+								.bloks__line
+								.bloks__text
+									p.section-weight600 К возможностям тарифа Старт добавляются следующие услуги:
+									p Неограниченное количество товаров
+									p Региональное продвижение
+									p Подключение и сопоставление до 5000 товаров с системами 1С, Мой склад и YML
+									p Модули онлайн-оплаты и доставки
+									a.note(href='https://www.pulscen.ru/about/packets' target='_blank') и другие услуги...
+							.bloks__item.bloks__item-3
+								p.bloks__heading.section-h2 Тариф “Всё включено”
+								p.bloks__subtitle
+									| Продавайте товары и услуги по всей России. Получите комплексное обслуживание для роста продаж.
+								.bloks__line
+								.bloks__text
+									p.section-600 К возможностям тарифа Старт и Бизнес добавляются следующие услуги:
+									p Продвижение по всей России
+									p
+										| Услуга 
+										a.section-link(href='https://ekb.pulscen.ru/online-shop/turbosearch') «Турбопоиск»
+										|  или 
+										a.section-link(href='https://www.pulscen.ru/online-shop/turbonet') «Турбосети»
+										|  - продвижения в рекламной выдаче Яндекса и Google.
+									p
+										| Услуга “
+										a.section-link(href='https://www.pulscen.ru/online-shop/goods-support') Товарное сопровождение
+										| ” - оптимизация товаров под поисковые системы Яндекс и Google.
+									a.note(href='https://www.pulscen.ru/about/packets' target='_blank') и другие услуги...
+						p.section-h2.efficiency__familiarization
+							| Ознакомьтесь с полным перечнем услуг, входящих в тарифы Пульса цен или закажите консультацию специалиста.
+						.efficiency__btn
+							a.section-button(href='https://www.pulscen.ru/about/packets' target='_blank')  Подробнее о тарифах 
+							.section-buttonWhite.ab-order.js-apress-order-button.js-orders-callback-link(data-button-type='order_callback' data-company='99572059' data-company-id='99572059' data-company-name='Пульс цен Онлайн' data-company-name-rest='' data-company-url='https://help.pulscen.ru/' data-params='{"company_id":"99572059"}' data-statistics='1' data-type='callback')
+								| {crm_analytics:click_link(Заказать консультацию,#order,sk,Консультация_тарифы)}
+				// efficiency
+				section#sc-efficiency.efficiency
+					.content
+						.section-h1.efficiency__heading Повысить эффективность размещения
+						.efficiency__subtitle
+							| Ознакомьтесь с возможностями более высоких тарифов, чтобы выбрать выгодное размещение под свои задачи
+						.efficiency-slider
+							.efficiency-slider-wrapper
+								.efficiency-slider__slid
+									.efficiency-slider-coll
+										.efficiency-slider-offer
+											p.section-h2
+												| Продавайте товары и услуги на группу городов или по всей России. Получите больше возможностей для роста продаж.
+											// <p class="efficiency-slider__subtitle">Продавайте товары и услуги на группу городов или по всей России. Получите больше возможностей для роста продаж.</p>
+											.efficiency-slider__line
+											.efficiency-slider-advantages
+												p.efficiency-slider-advantages__heading.section-600 Кому подходит:
+												p.efficiency-slider-advantages__text
+													| Компаниям, имеющим региональные представительства в разных городах или тем, кто готов продавать и доставлять в другие регионы из своего.
+												p.efficiency-slider-advantages__heading2.section-600 Основные преимущества:
+												.efficiency-slider-advantages__pr
+													p.efficiency-slider-advantages__text Прирост трафика, увеличение заявок
+													p.efficiency-slider-advantages__text Выход на новые рынки сбыта
+													p.efficiency-slider-advantages__text Привлечение покупателей из других городов
+													p.efficiency-slider-advantages__text Увеличение доли рынка
+											.efficiency-slider-more
+												.section-button.efficiency-slider-more__section-button(target='_blank')
+													| {crm_analytics:click_link(Подробнее о продвижении в регионы,https://www.pulscen.ru/online-shop/Regionalnoye_prodvizheniye,sk,Региональное продвижение)}
+										.efficiency-slider-img
+											img.efficiency-slider-img__map(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/235120/content_group_217.png' alt='')
+				section.delimiter
+				// complex
+				section#sc-complex.complex
+					.content
+						.section-h1.complex__heading Как работают с товарами специалисты Пульса цен
+						.complex-work
+							.block
+								.wrapper-item
+									.item
+										span.accent-orang 1
+										div
+											.item__heading  Загрузка прайс-листа предоставленного клиентом (Excel, YML, Word) 
+									.item
+										span.section-corporateColor 2
+										div
+											.item__heading Проработка названий товаров с учетом ключевых слов и поисковых запросов 
+									.item
+										span.section-corporateColor 3
+										div
+											.item__heading
+												| Добавление отсутствующей информации о товаре для 100% показателя заполнености. Это необходимо для повышения в выдачи в рубрике Пульса цен
+									.wrapper-item__line
+									.wrapper-item__line.wrapper-item__line2
+								.wrapper-item.wrapper-item2
+									.item
+										span.section-corporateColor 4
+										div
+											.item__heading
+												| Проработка приоритетных товаров вашей компании, чтобы они выглядели максимально привлекательно для покупателей и для поисковых систем
+									.item
+										span.section-corporateColor 5
+										div
+											.item__heading  Оформление товаров на главной странице сайта на Пульсе цен 
+									.item
+										span.section-corporateColor 6
+										div
+											.item__heading  Обновление прайс-листа
+									.wrapper-item__line
+								.tarif
+									p.section-h2.tarif__tarif Хочу поддержку специалистов в работе с товарами
+								.complex__btns
+									a.section-button(href=' https://www.pulscen.ru/about/packets')  Тарифы на размещение 
+									.section-buttonWhite.ab-order.js-apress-order-button.js-orders-callback-link(data-button-type='order_callback' data-company='99572059' data-company-id='99572059' data-company-name='Пульс цен Онлайн' data-company-name-rest='' data-company-url='https://help.pulscen.ru/' data-params='{"company_id":"99572059"}' data-statistics='1' data-type='callback')  Задать вопрос
+				section.delimiter
+				section
+					.content
+						p.section-h3.section-weight600 Расскажите о вашем бизнесе, чтобы получить персональные условия размещения
+						.section-btns.person
+							.section-buttonWhite Пройти опрос
+							.section-link.ab-order.js-apress-order-button.js-orders-callback-link(data-button-type='order_callback' data-company='99572059' data-company-id='99572059' data-company-name='Пульс цен Онлайн' data-company-name-rest='' data-company-url='https://help.pulscen.ru/' data-params='{"company_id":"99572059"}' data-statistics='1' data-type='callback') Заказать консультацию
+				section
+					.modal-wrapper
+						.modal-wrapper-block(data-popup='popup1')
+							.modal-block
+								img.modal-close(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/219819/content_cancel.png' alt='')
+								.modal-content
+									// ? Информация о тарифе
+									| {company:packet_title}
+									//- | базовый
+								.modal-text
+									| Доступно к загрузке до {company:products_limit}
+									// 10
+									| товаров
+								.modal-text Товары не показываются в рубриках
+								.modal-text
+									| Отсутствует 
+									a.section-link(href='') поддержка
+									|  аккаунт-менеджера
+		// popap
+		script(src='https://code.jquery.com/jquery-3.5.1.js')
+		script(src='https://www.pulscen.ru/system/ckeditor_assets/attachments/221470/popap.js')
+		script(src='https://www.pulscen.ru/system/ckeditor_assets/attachments/242600/company_cotalog.js')
+		// <script src="company_cotalog.js"></script>

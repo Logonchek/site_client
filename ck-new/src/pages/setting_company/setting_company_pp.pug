@@ -1,0 +1,299 @@
+include ../../miksins.pug
+
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+		title= "Настройки компании"
+	body
+		.main-content
+			.width314px
+			.setting_company_pp
+				.toolbar-rascal
+					p.section-h1 Настройки компании
+					p.toolbar-rascal__number.section-h2 8 800 100 91 91
+				header
+					.header
+						.block
+							.block-tariff
+								p.section-h2.section-accentBlue Информация о компании
+								a.item(target="blank" href="http://{company:domain}/admin/company_settings")
+									img.img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/289167/content_karandash.png") 
+							.block-info
+								p Здесь вы можете отредактировать информацию о компании
+					.consultant.section-block
+						img.consultant__img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/289170/content_content_small_1.png", alt="")
+						.consultant__info 
+							.consultant__name Елена Толстова
+							.consultant__position специалист Пульса цен
+							.consultant__icon 
+								a(target="blank" href="https://wa.me/+79292690013").numder_futer
+									img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/289145/content_vats.png")
+								a(target="blank" href="viber://chat?number=+79292690013").numder_futer
+									img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/289146/content_vayber.png")
+								a(target="blank" href="mailto:tolstova@pulscen.ru").numder_futer
+									img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/289133/content_pochta.png")
+								a(target="blank" href="https://t.me/PulscenKC").numder_futer
+									img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/289128/content_telega.png")
+							.consultant__btn 
+								+button("{crm_analytics:click_link(Задать вопрос,#order,sk,Консультация_Тарифы)}", "Задать вопрос", "heading_Button_zero",)
+				section.reviews-orders
+					.order
+						p.section-h2.reviews-orders__heading Изменить адрес
+						.blocks
+							+block_extended(
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/289222/content_ikonka_izmenit_adres.png",
+								"Изменить адрес", 
+								"Проверьте актуальность адреса, чтобы клиенты могли найти вас",
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/289134/content_ill.png", 
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/289211/content_ildl.png", 
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/289226/content_ilil.png", 
+								"http://{company:domain}/admin/office/2085030/edit?utm_source=CK&utm_medium=Nastroyki_kompanii&utm_campaign=izmenit_adress")
+							+block_extended(
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/289140/content_ikonka_dobavit_adres.png",
+								"Добавить новый адрес", 
+								"Укажите все адреса компании, если их несколько",
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/289135/content_ildl.png",
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/289210/content_ill.png", 
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/289225/content_illa.png", 
+								"http://{company:domain}/admin/office/new?utm_source=CK&utm_medium=Nastroyki_kompanii&utm_campaign=dobavit_adres")
+						.reviews-orders__delimiter
+						p.section-h2.reviews-orders__heading Доставка и оплата
+						.blocks
+							+block_extended(
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/289139/content_ikonka_dostavka.png",
+								"Доставка", 
+								"Отметьте способы доставки, которые вы поддерживаете. ",
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/289143/content_idcll.png", 
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/289252/content_iddll.png", 
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/289245/content_idcdcll.png", 
+								"http://{company:domain}/admin/delivery_payment?utm_source=CK&utm_medium=Nastroyki_kompanii&utm_campaign=Dostavka")
+							+block_extended(
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/289137/content_ikonka_oplata.png",
+								"Оплата", 
+								"Выберите условия оплаты, на которых вы работаете. ",
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/289151/content_dd.png",
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/289251/content_ill.png", 
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/289244/content_iddll.png", 
+								"http://{company:domain}/admin/delivery_payment?utm_source=CK&utm_medium=Nastroyki_kompanii&utm_campaign=Oplata#payment")
+					.reviews 
+						.blocks.blocks_coll-2
+							div
+								p.section-h2.reviews-orders__heading Работа с отзывами
+								+block(
+									"https://www.pulscen.ru/system/ckeditor_assets/pictures/289141/content_ikonka_adres_sayta.png",
+									"Изменить домен  сайта", 
+									"Сделать домен сайта понятным и легко запоминающимся вашего сайта.",
+									"","",
+									"http://{company:domain}/domain")
+							div
+								p.section-h2.reviews-orders__heading Пользователи сайта	
+								.reviews-orders__grid
+									+block(
+										"https://www.pulscen.ru/system/ckeditor_assets/pictures/289327/content_ikonka_polzovateli.png",
+										"Редактировать права пользователей", 
+										"Определите, кто будет отвечать за функции на вашем сайте.",
+										"","",
+										"http://{company:domain}/users")
+									+block(
+										"https://www.pulscen.ru/system/ckeditor_assets/pictures/289328/content_ikonka_menedzher.png",
+										"Добавить менеджера", 
+										"Выберите менеджеров, которые будут отвечать за группу товаров или регион.",
+										"","",
+										"http://{company:domain}/users")
+				.sale.switch-js#tariff-block
+					p.section-h2 Как поднять продажи на Пульсе цен
+					p.subtitle Познакомиться с возможностями более высоких тарифов, чтобы выбрать выгодное размещение под свои задачи
+					.slider
+						.swiper.slider__sale
+							.swiper-wrapper
+								.swiper-slide
+									.block 
+										img.icon(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/283012/content_kalkulyator.png", alt="")
+										.block__grid
+											.block-info     
+												img.illustration(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/283025/content_illyustratsiya_biznes.png")
+												div
+													.block__heading.fat700.section-h2 Тариф “Бизнес”
+													.block__subtitle Получайте клиентов из нескольких регионов. Подключайте полезные интеграции для более эффективного продвижения товаров и услуг.
+												.line
+												.list 
+													p.fat600.list__heading Общее для всех пакетов тарифа:
+													.list__grid
+														.list__li Безлимитная загрузка каталога
+														.list__li От 1 до 3 дополнительных регионов для продаж
+														.list__li Интеграция с Битрикс 24
+														.list__li Интеграция с 1С, Мой склад до 5000 товаров
+														.list__li Модули онлайн-оплаты и доставки
+														.list__li SSl-сертификат
+														.list__li Личный менеджер поддержки
+														.list__li Проработка структуры сайта  по требованиям SEO
+														.list__li Услуга “Мегасайт Профи”
+											.tarifs.tarifs-start
+												img.tarifs-start__img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/286728/content_ellipse_59.png", alt="") 
+												.tarif
+													a.tarif__header.fat700(target="blank" href="https://ekb.pulscen.ru/about/packets?utm_source=CK&utm_medium=Nastroyki_kompanii&utm_campaign=Biznes-Serebro") 
+														p СЕРЕБРО
+														img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/283013/content_zvezdy.png", alt="")
+													.list
+														.list__li_circle 1 дополнительных региона для размещения товаров 
+														.list__li_circle Размещение товаровв каталоге выше тарифа “Базовый” *
+													+buttonLink("Выбрать", "heading_Button efficiency__btn", "https://ekb.pulscen.ru/about/packets?utm_source=CK&utm_medium=Nastroyki_kompanii&utm_campaign=Biznes-Serebro")
+												.tarif
+													a.tarif__header.fat700(target="blank" href="https://ekb.pulscen.ru/about/packets?utm_source=CK&utm_medium=Nastroyki_kompanii&utm_campaign=Biznes-Zoloto") 
+														p ЗОЛОТО
+														img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/283014/content_zvezdy2.png", alt="")
+													.list
+														.list__li_circle 2 дополнительных региона для размещения товаров
+														.list__li_circle Размещение товаров в каталоге выше тарифа “Серебра”
+													+buttonLink("Выбрать", "heading_Button efficiency__btn", "https://ekb.pulscen.ru/about/packets?utm_source=CK&utm_medium=Nastroyki_kompanii&utm_campaign=Biznes-Zoloto", "tab2-tariff", "tab2-tariff")
+												.tarif
+													a.tarif__header.fat700(target="blank" href="https://ekb.pulscen.ru/about/packets?utm_source=CK&utm_medium=Nastroyki_kompanii&utm_campaign=Biznes-Platina")  
+														p ПЛАТИНА
+														img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/283264/content_zvezdy.png", alt="")
+													.list
+														.list__li_circle 3 дополнительных региона для размещения товаров
+														.list__li_circle Размещение товаров в каталоге выше тарифа “Серебра” и “Золота”
+														.list__li_circle Размещение товаров на площадках Пульс цен по всей России без приоритета
+													+buttonLink("Выбрать", "heading_Button efficiency__btn", "https://ekb.pulscen.ru/about/packets?utm_source=CK&utm_medium=Nastroyki_kompanii&utm_campaign=Biznes-Platina")
+								.swiper-slide
+									.block 
+										img.icon(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/283012/content_kalkulyator.png", alt="")
+										.block__grid
+											.block-info     
+												img.illustration.illustration_all-include(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/289329/content_illyustratsiya_biznes.png")
+												div
+													.block__heading.fat700.section-h2 Тариф "Все включено"
+													.block__subtitle Полный комплекс услуг по продвижению бизнеса в интернете для наилучших результатов.
+												.line
+												.list 
+													//- p.fat600.list__heading К возможностям тарифа Старт добавляются следующие услуги:
+													.list__grid
+														.list__li Целевые пользователи увидят ваше предложение на первой странице Яндекс и Google
+														.list__li Рост трафика и заказов
+														.list__li Доступ к базе заявок сервиса "Закупки"
+														.list__li Клиенты из выбранных регионов
+														.list__li Полная проработка страниц сайта и товарных рубрик
+														.list__li Посадочные страницы для рекламных компаний кампаний
+														.list__li Доступ ко всем сервисам интеграции
+											.tarifs
+												.tarif
+													a.tarif__header.fat700(target="blank" href="https://ekb.pulscen.ru/about/packets") 
+														p СЕРЕБРО
+														img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/283013/content_zvezdy.png", alt="")
+													.list
+														.list__li_circle Неограниченное количество товаров*
+														.list__li_circle 7 городов на приоритетном размещении
+														.list__li_circle Услуга “Мегасайт Профи”
+														.list__li_circle Услуга «Турбопоиск» на 3 месяца (1 группа товаров)
+														.list__li_circle Размещение товаров на площадках Пульс цен по всей России без приоритета
+														.list__li_circle Включены все сервисы интеграции
+														.list__li_circle Платный SSL-сертификат.
+													+buttonLink("Выбрать", "heading_Button efficiency__btn", "https://ekb.pulscen.ru/about/packets")
+												.tarif
+													a.tarif__header.fat700(target="blank" href="https://ekb.pulscen.ru/about/packets?utm_source=CK&utm_medium=Nastroyki_kompanii&utm_campaign=Vse_vklyucheno_-_zoloto") 
+														p ЗОЛОТО
+														img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/283014/content_zvezdy2.png", alt="")
+													.list
+														.list__li_circle Выше пакета "Серебро"в товарном каталоге
+														.list__li_circle Неограниченное количество товаров*
+														.list__li_circle Услуга “Мегасайт Профи”
+														.list__li_circle 7 городов на приоритетном размещении
+														.list__li_circle Услуга «Турбопоиск» на 3 месяца (2 группы товаров)
+														.list__li_circle Размещение товаров на площадках Пульс цен по всей России без приоритета
+														.list__li_circle Включены все сервисы интеграции
+														.list__li_circle Платный SSL-сертификат.
+													+buttonLink("Выбрать", "heading_Button efficiency__btn", "https://ekb.pulscen.ru/about/packets?utm_source=CK&utm_medium=Nastroyki_kompanii&utm_campaign=Vse_vklyucheno_-_zoloto")
+												.tarif
+													a.tarif__header.fat700(target="blank" href="https://ekb.pulscen.ru/about/packets?utm_source=CK&utm_medium=Nastroyki_kompanii&utm_campaign=Vse_vklyucheno_-_platina")  
+														p ПЛАТИНА
+														img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/283264/content_zvezdy.png", alt="")
+													.list
+														.list__li_circle Выше пакета "Золото" в товарном каталоге
+														.list__li_circle Неограниченное количество товаров*
+														.list__li_circle 7 городов на приоритетном размещении
+														.list__li_circle Услуга “Мегасайт Профи”
+														.list__li_circle Услуга «Турбопоиск» на 3 месяца (3 группы товаров)
+														.list__li_circle Размещение товаров на площадках Пульс цен по всей России без приоритета
+														.list__li_circle Включены все сервисы интеграции
+														.list__li_circle Платный SSL-сертификат.
+													+buttonLink("Выбрать", "heading_Button efficiency__btn", "https://ekb.pulscen.ru/about/packets?utm_source=CK&utm_medium=Nastroyki_kompanii&utm_campaign=Vse_vklyucheno_-_platina")
+								.swiper-slide
+									.block.block_russia.block_russia-slide
+										.block__grid.block__grid_russia
+											.block-info
+												.block_russia-header   
+													div
+														.block__heading.fat700.section-h2 Вся Россия
+														.block__subtitle Размещение товаров и услуг в каталоге Пульс цен по всей России. Привлекайте покупателей во всех регионах страны.
+													.line
+													.list 
+														p.fat600.list__heading Кому подходит:
+														p Компаниям, имеющим региональные представительства в разных городах или тем, кто готов продавать и доставлять во все регионы из своего.
+												.list 
+													p.fat600.list__heading Основные преимущества:
+													.list__grid
+														.list__lo Прирост трафика, увеличение заявок
+														.list__lo Выход на новые рынки сбыта
+														.list__lo Привлечение покупателей со всей России
+														.list__lo Увеличение доли рынка
+														.list__lo Продажа без посредников
+														.list__lo Повышение узнаваемости компании и доверия клиентов
+														.list__lo Формирование новой ниши продаж
+												+button("Подробнее о продвижении по России", "heading_Button efficiency__btn")
+											.block__img
+												img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/283106/content_illyustratsiya_vsya_rossiya.png", alt="")
+						.article-button-prev
+							img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/216808/content_arrow_6.png", alt="")
+						.article-button-next
+							img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/216809/content_arrow_z6.png", alt="")
+					p.sale__end Ознакомьтесь с полным перечнем услуг, входящих в тарифы Пульса цен, или закажите консультацию специалиста. 
+					+button("{crm_analytics:click_link(Заказать консультацию,#order,sk,Консультация_Тарифы)}", "Заказать консультацию", "heading_Button_zero")
+				.integration 
+					p.section-h2 Интеграции
+					p.integration__subtitle Подключите дополнительные сервисы и интеграции для повышения эффективности сайта, улучшения работы с действующими клиентами и привлечения новых клиентов. 
+					.integration__wrapper 
+						.item.section-block
+							.item__info
+								div.item__delivery
+									p.item__heading.section-h2.fat700 Доставка
+									p.item__subtitle Сервис доставки на сайте поможет клиенту завершить путь от выбора до покупки.
+									.item__icon 
+										a(target="blank" href="https://www.pulscen.ru/online-shop/boxberry") 
+											img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/289325/content_boksberri.png", alt="")
+										a(target="blank" href="https://www.pulscen.ru/online-shop/sdek") 
+											img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/289321/content_sdek.png", alt="")
+										a(target="blank" href="https://www.pulscen.ru/online-shop/dellin") 
+											img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/289324/content_delovye_linii.png", alt="")
+								+buttonLink("Узнать больше о сервисах доставки", "heading_Button_zero integration__btn", "https://www.pulscen.ru/online-shop/integration?utm_source=CK&utm_medium=Nastroyki_kompanii&utm_campaign=Dostavka#delivery")
+							.integration__img 
+								picture
+									source(srcset="https://www.pulscen.ru/system/ckeditor_assets/pictures/289142/content_ifffll.png" media='(min-width: 1024px')
+									source(srcset="https://www.pulscen.ru/system/ckeditor_assets/pictures/289314/content_idll.png" media='( min-width: 700px)')
+									source(srcset="https://www.pulscen.ru/system/ckeditor_assets/pictures/289313/content_ill3.png" media='( min-width: 300px)')
+									img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/289142/content_ifffll.png' alt='MDN')
+						.item.section-block
+							.item__info
+								div
+									p.item__heading.section-h2.fat700 Оплата
+									p.item__subtitle Онлайн-оплата на сайте провоцирует клиента завершить покупку сейчас. Длинный путь оплаты приводит к тому, что покупатель может передумать.
+									.item__icon 
+										a(target="blank" href="https://www.pulscen.ru/online-shop/paykeeper") 
+											img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/289323/content_pey_kiper.png", alt="")
+										a(target="blank" href="https://www.pulscen.ru/online-shop/sber") 
+											img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/289322/content_sber.png", alt="")
+										a(target="blank" href="https://www.pulscen.ru/online-shop/yookassa") 
+											img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/289320/content_yu_kassa.png", alt="")
+										a(target="blank" href="https://www.pulscen.ru/online-shop/alfa") 
+											img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/289326/content_alfa.png", alt="")
+								+buttonLink("Узнать больше о сервисах оплаты", "heading_Button_zero integration__btn", "https://www.pulscen.ru/online-shop/integration?utm_source=CK&utm_medium=Nastroyki_kompanii&utm_campaign=Oplata#payment")
+							.integration__img 
+								picture
+									source(srcset="https://www.pulscen.ru/system/ckeditor_assets/pictures/289150/content_fvfvill.png" media='(min-width: 1024px')
+									source(srcset="https://www.pulscen.ru/system/ckeditor_assets/pictures/289315/content_idddll.png" media='( min-width: 700px)')
+									source(srcset="https://www.pulscen.ru/system/ckeditor_assets/pictures/289312/content_ill33.png" media='( min-width: 300px)')
+									img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/289150/content_fvfvill.png' alt='MDN')
+
+
+
+

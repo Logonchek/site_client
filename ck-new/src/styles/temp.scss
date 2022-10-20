@@ -1,0 +1,107 @@
+/** @format */
+
+//как использовать - main_content{@include mainContent}
+.main_content {
+	@include mainContent(18px, $main_text_color);
+}
+
+header {
+	background: url('https://www.pulscen.ru/system/ckeditor_assets/pictures/280612/content_fonovye_volny.png') no-repeat 100% 100% / 100%, #f5f6f7;
+	position: relative;
+}
+.line {
+	margin: 0px 0 0px;
+	background: #e7eef4;
+	max-width: 100%;
+	width: 100%;
+	height: 2px;
+}
+.line-note {
+	font-weight: 700;
+}
+
+.header {
+	padding: 0px 0 248px;
+	margin-top: 80px;
+	z-index: 2;
+	position: relative;
+	.header__wrapper {
+		@include grid(25px, 1.6fr 1fr);
+	}
+	.btns {
+		margin-top: 40px;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+		grid-gap: 20px;
+		justify-content: start;
+	}
+	.line {
+		margin: 30px 0 10px;
+		background: $accentF;
+		max-width: 628px;
+		width: 100%;
+		height: 2px;
+	}
+	.line-note {
+		color: $accentF;
+		font-weight: 700;
+	}
+}
+.toolbar-rascal {
+	@include grid(16px, auto 1fr);
+	justify-items: end;
+	align-items: center;
+}
+
+@media (max-width: 1440px) {
+	header .header__img img {
+		position: absolute;
+		top: 125px;
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 1366px) {
+}
+
+@media (max-width: 1024px) {
+	.header {
+		padding: 0px 0 60px;
+		.header__wrapper {
+			grid-template-columns: 1fr;
+		}
+		.btns {
+			grid-auto-flow: dense;
+			margin-top: 24px;
+		}
+		.offer {
+			grid-gap: 16px;
+		}
+		.mobile {
+			display: block;
+			width: fit-content;
+			margin: auto;
+			img {
+				max-width: 100%;
+			}
+		}
+	}
+	:root {
+		--section: 60px;
+		--block: 40px;
+	}
+}
+
+@media (max-width: 800px) {
+}
+
+@media (max-width: 660px) {
+	.main_content {
+		font-size: 14px;
+	}
+	.header {
+		margin-top: 40px;
+	}
+}
+@media (max-width: 480px) {
+}

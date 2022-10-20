@@ -1,0 +1,111 @@
+include ../../miksins.pug
+
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+		title= "заказы и отзывы"
+	body
+		.main-content.order-page-pp
+			<div class="width314px"></div>
+			.order-page
+				.toolbar-rascal
+					p.section-h1 Заказы и отзывы
+					p.section-h2 8 800 100 91 91
+				header
+					.header
+						.block
+							.block-tariff
+								p Тариф:
+								+infoCompany("{company:packet_title}", "Увеличить заказы", "https://www.pulscen.ru/system/ckeditor_assets/pictures/281862/content_zvezdy.png", "https://www.pulscen.ru/system/ckeditor_assets/pictures/281898/content_vector.png", "#efficiency")
+							.block-info
+								a(href="https://novaya-99752367.pulscen.ru/users/contacts").item
+									p Назначить менеджеров на заказы
+									img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/281892/content_arrow_2.png") 
+								a(href="https://novaya-99752367.pulscen.ru/users/contacts").item
+									p Подключить  sms-оповещение о заказах
+									img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/281892/content_arrow_2.png") 
+						.block.blockQuestion
+							.block-question
+								img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/281903/content_vopros.png")
+							.block-note
+								p Покупатели заказывают ваши товары в рубриках Пульса цен. Некоторые клиенты переходят из каталога на ваш сайт и оформляют заказ там. Все заказы и вопросы по товарам вы видите в Личном кабинете.
+					#onlineSupportContainer.consultant
+				section.reviews-orders
+					.order
+						p.section-h2 Работа с заказами
+						.blocks
+							+block(
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/281896/content_ikonka_uvedomleniya.png",
+								"Ваши заказы", 
+								"Посмотрите и обработайте заказы от покупателей с Пульса цен.",
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/281904/content_illyustratsiya_zakaza.png", 
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/282169/content_illyustratsiya_zakaza.png", 
+								"https://www.pulscen.ru/dashboard/seller/orders?unprocessed=true")
+							+block(
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/281896/content_ikonka_uvedomleniya.png",
+								"Ваши потенциальные покупатели", 
+								"Узнайте, кто смотрел ваши контакты и отправьте им спецпродложение",
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/282140/content_illyustratsiya_pokupateli3.png",
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/282170/content_illyustratsiya_pokupateli.png", 
+								"https://www.pulscen.ru/dashboard/seller/appeal/orders")
+						.blocks.blocks_multi
+							+block(
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/281897/content_ikonka_tovarov.png",
+								"Настроить способы получения заказов", 
+								"Выберите способы заказа товаров, которые будут доступны для покупателей.","","",
+								" https://novaya-99752367.pulscen.ru/communication_settings/edit")
+							+block(
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/281894/content_ikonka_menedzher.png",
+								"Назначить менеджеров на заказы", 
+								"Выберите менеджеров, которые будут отвечать за группу товаров или регион.", "","",
+								" https://novaya-99752367.pulscen.ru/users/contacts")
+							+block(
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/281896/content_ikonka_uvedomleniya.png",
+								"Подключить sms-оповещение о заказах", 
+								"Получайте sms о новых заказах с Пульса цен.",
+								"","",
+								"https://novaya-99752367.pulscen.ru/users/contacts")
+					.reviews 
+						p.section-h2 Работа с отзывами
+						.blocks.blocks_multi
+							+block(
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/281891/content_ikonka_otzyv.png",
+								"Отзывы о компании", 
+								"Смотрите и комментируйте отзывы о вашей компании.",
+								"","",
+								"https://www.pulscen.ru/dashboard/comments")
+							+block(
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/281890/content_ikonka_kommentariy.png",
+								"Мои комментарии на отзывы", 
+								"Посмотрите ваши ответы на отзывы покупателей.",
+								"","",
+								"https://www.pulscen.ru/dashboard/comments")
+							+block(
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/281895/content_ikonka_vopros.png",
+								"Как правильно отвечать на отзывы", 
+								"Читайте рекомендации, как отвечать на отзывы и работать с негативом.","","",
+								"https://www.pulscen.ru/about/otzyvy")
+				section.efficiency#efficiency
+					p.section-h1 Повысить эффективность размещения
+						.blocks
+							.block.block-switch(switchy="tariff")
+								.textarea
+									.heading Как поднять продажи на Пульсе цен
+									.text Подключите дополнительные возможности и сервисы, чтобы получать больше покупателей.
+									+buttonLink("Подробнее о тарифах", "heading_Button efficiency__btn", "#tariff-block", "tariff")
+								.img
+									img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/282961/content_frame_858.png")
+							.block.block-switch(switchy="article")
+								.textarea
+									.heading Как увеличить количество заказов 
+									.text Смотрите практические советы и читайте полезные материалы о повышении продаж и онлайн-продвижении.
+									+buttonLink("Читать", "heading_Button efficiency__btn","#article-block", "article")
+								.img
+									img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/282962/content_illyustratsiya.png")
+				include ./modules/order/modal-article.pug
+				include ./modules/order/modal-tarif.pug
+				#onlineSupportContainer.consultant-mobile
+
+
+

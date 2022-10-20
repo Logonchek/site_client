@@ -1,0 +1,166 @@
+.sale.switch-js(switchy="tariff")#tariff-block
+    p.section-h2 Как поднять продажи на Пульсе цен
+    p.subtitle Познакомиться с возможностями более высоких тарифов, чтобы выбрать выгодное размещение под свои задачи
+    .slider
+        .swiper.slider__sale
+            .swiper-wrapper
+                .swiper-slide
+                    .block 
+                        img.icon(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/283012/content_kalkulyator.png", alt="")
+                        .block__grid
+                            .block-info     
+                                img.illustration(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/286730/content_illyustratsiya_biznes.png")
+                                div
+                                    .block__heading.fat700.section-h2 Тариф “Старт”
+                                    .block__subtitle Для выгодного старта на Пульсе цен. Продвигайте товары и услуги в своём регионе.
+                                .line
+                                .list 
+                                    p.fat600.list__heading Вам добавляются следующие услуги:
+                                    .list__grid
+                                        .list__li Доступно от 1 000 до 7 000 товаров
+                                        .list__li Помощь в загрузке и оформлении товаров
+                                        .list__li Проработка приоритетных товаров специалистами Пульса цен
+                                        .list__li Доступ к базе готовых заказов “Закупки”
+                                    p.section-accentGray и другие услуги...
+                                    
+                            .tarifs.tarifs-start
+                                picture.tarifs-start__img
+                                    source(srcset='https://www.pulscen.ru/system/ckeditor_assets/pictures/286735/content_zero_img.png' media='(max-width: 660px)')
+                                    source(srcset='https://www.pulscen.ru/system/ckeditor_assets/pictures/286729/content_ellipse_60.png' media='(min-width: 660px) and (max-width: 2500px)')
+                                    img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/286729/content_ellipse_60.png' alt='MDN')  
+                                .tarif
+                                    a.tarif__header.fat700(href="https://pulscen.ru/about/packets?utm_source=CK&utm_medium=Zakaz_otziv&utm_campaign=Start_serebro") 
+                                        p СЕРЕБРО
+                                        img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/283013/content_zvezdy.png", alt="")
+                                    .list
+                                        .list__li_circle До 1000 товаров
+                                        .list__li_circle Доступ к 1 модулю интеграций *
+                                    +buttonLink("Выбрать", "heading_Button efficiency__btn", "https://pulscen.ru/about/packets?utm_source=CK&utm_medium=Zakaz_otziv&utm_campaign=Start_serebro")
+                                .tarif
+                                    a.tarif__header.fat700(href="https://pulscen.ru/about/packets") 
+                                        p ЗОЛОТО
+                                        img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/283014/content_zvezdy2.png", alt="")
+                                    .list
+                                        .list__li_circle До 3000 товаров
+                                        .list__li_circle Выше пакета "Серебро" в товарном каталоге
+                                        .list__li_circle Доступ к 2 модулям интеграций *
+                                    +buttonLink("Выбрать", "heading_Button efficiency__btn", "https://pulscen.ru/about/packets?utm_source=CK&utm_medium=Zakaz_otziv&utm_campaign=Start_zoloto", "tab2-tariff", "tab2-tariff")
+                                .tarif
+                                    a.tarif__header.fat700(href="https://pulscen.ru/about/packets?utm_source=CK&utm_medium=Zakaz_otziv&utm_campaign=Start_platina")  
+                                        p ПЛАТИНА
+                                        img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/283264/content_zvezdy.png", alt="")
+                                    .list
+                                        .list__li_circle До 7000 товаров
+                                        .list__li_circle Выше пакета "Золото" в товарном каталоге
+                                        .list__li_circle Доступ к 3 модулям интеграций *
+                                    +buttonLink("Выбрать", "heading_Button efficiency__btn", "https://pulscen.ru/about/packets?utm_source=CK&utm_medium=Zakaz_otziv&utm_campaign=Start_platina")
+                                .tarif
+                                    a.tarif__header.fat700(href="https://pulscen.ru/about/packets?utm_source=CK&utm_medium=Zakaz_otziv&utm_campaign=Start_platinaplyus")  
+                                        p ПЛАТИНА+
+                                        img(src="https://www.pulscen.ru/system/ckeditor_assets/attachments/286859/zvezdy.png", alt="")
+                                    .list
+                                        .list__li_circle Неограниченное количество товаров
+                                        .list__li_circle VIP-места
+                                        .list__li_circle Доступ к 3 модулям интеграций *
+                                    +buttonLink("Выбрать", "heading_Button efficiency__btn", "https://pulscen.ru/about/packets?utm_source=CK&utm_medium=Zakaz_otziv&utm_campaign=Start_platinaplyus")
+                .swiper-slide
+                    .block 
+                        img.icon(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/283012/content_kalkulyator.png", alt="")
+                        .block__grid
+                            .block-info     
+                                img.illustration(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/283025/content_illyustratsiya_biznes.png")
+                                div
+                                    .block__heading.fat700.section-h2 Тариф “Бизнес”
+                                    .block__subtitle Продавайте товары и услуги в несколько регионов и подключайте полезные интеграции для более эффективного продвижения товаров и услуг
+                                .line
+                                .list 
+                                    p.fat600.list__heading К возможностям тарифа Старт добавляются следующие услуги:
+                                    .list__grid
+                                        .list__li Неограниченное количество товаров
+                                        .list__li От 1-го до 3-х дополнительных регионов для продвижения
+                                        .list__li Подключение и сопоставление до 5000 товаров с системами 1С, Мой склад и YML
+                                        .list__li Модули онлайн-оплаты и доставки и CRM Битрикс
+                            .tarifs
+                                .tarif
+                                    a.tarif__header.fat700(href="https://pulscen.ru/about/packets") 
+                                        p СЕРЕБРО
+                                        img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/283013/content_zvezdy.png", alt="")
+                                    .list
+                                        .list__li_circle Неограниченное количество товаров
+                                        .list__li_circle Услуга “Мегасайт Профи”
+                                        .list__li_circle 1 дополнительный регион продаж
+                                    +buttonLink("Выбрать", "heading_Button efficiency__btn", "https://pulscen.ru/about/packets")
+                                .tarif
+                                    a.tarif__header.fat700(href="https://pulscen.ru/about/packets") 
+                                        p ЗОЛОТО
+                                        img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/283014/content_zvezdy2.png", alt="")
+                                    .list
+                                        .list__li_circle Выше пакета "Серебро" в товарном каталоге
+                                        .list__li_circle Неограниченное количество товаров
+                                        .list__li_circle Услуга “Мегасайт Профи”
+                                        .list__li_circle 2 дополнительных региона продаж
+                                    +buttonLink("Выбрать", "heading_Button efficiency__btn", "https://pulscen.ru/about/packets")
+                                .tarif
+                                    a.tarif__header.fat700(href="https://pulscen.ru/about/packets")  
+                                        p ПЛАТИНА
+                                        img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/283264/content_zvezdy.png", alt="")
+                                    .list
+                                        .list__li_circle Выше пакета "Золото" в товарном каталоге
+                                        .list__li_circle Неограниченное количество товаров
+                                        .list__li_circle Услуга “Мегасайт Профи”
+                                        .list__li_circle 3 дополнительных региона продаж
+                                        .list__li_circle Размещение товаров на площадках Пульс цен по всей России без приоритета.
+                                    +buttonLink("Выбрать", "heading_Button efficiency__btn", "https://pulscen.ru/about/packets")
+                .swiper-slide
+                    .block.block_russia.block_russia-slide
+                        .block__grid.block__grid_russia
+                            .block-info
+                                .block_russia-header   
+                                    div
+                                        .block__heading.fat700.section-h2 Вся Россия
+                                        .block__subtitle Размещение товаров и услуг в каталоге Пульс цен по всей России. Привлекайте покупателей во всех регионах страны.
+                                    .line
+                                    .list 
+                                        p.fat600.list__heading Кому подходит:
+                                        p Компаниям, имеющим региональные представительства в разных городах или тем, кто готов продавать и доставлять во все регионы из своего.
+                                .list 
+                                    p.fat600.list__heading Основные преимущества:
+                                    .list__grid
+                                        .list__lo Прирост трафика, увеличение заявок
+                                        .list__lo Выход на новые рынки сбыта
+                                        .list__lo Привлечение покупателей со всей России
+                                        .list__lo Увеличение доли рынка
+                                        .list__lo Продажа без посредников
+                                        .list__lo Повышение узнаваемости компании и доверия клиентов
+                                        .list__lo Формирование новой ниши продаж
+                                +button("Подробнее о продвижении по России","Подробнее о продвижении по России", "heading_Button efficiency__btn")
+                            .block__img
+                                img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/283106/content_illyustratsiya_vsya_rossiya.png", alt="")
+        .article-button-prev
+            img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/216808/content_arrow_6.png", alt="")
+        .article-button-next
+            img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/216809/content_arrow_z6.png", alt="")
+        .conclusion 
+            p Ознакомьтесь с полным перечнем услуг, входящих в тарифы Пульса цен, или закажите консультацию специалиста. 
+            +button("{crm_analytics:click_link(Заказать консультацию,#order,sk,Консультация_тарифы)}", "Заказать консультацию", "heading_Button_zero efficiency__btn",'f')
+    .block.block_russia 
+            .block__grid.block__grid_russia
+                .block-info
+                    .block_russia-header   
+                        div
+                            .block__heading.fat700.section-h2 Региональное продвижение на Пульсе цен
+                            .block__subtitle Продавайте товары и услуги на группу городов или по всей Украине. Получите больше возможностей для роста продаж.
+                        .line
+                        .list 
+                            p.fat600.list__heading Кому подходит:
+                            p Компаниям, имеющим региональные представительства в разных городах, или тем, кто готов продавать и доставлять в другие регионы из своего.
+                    .list 
+                        p.fat600.list__heading Основные преимущества:
+                        .list__grid
+                            .list__lo Прирост трафика, увеличение заявок
+                            .list__lo Выход на новые рынки сбыта
+                            .list__lo Привлечение покупателей из других городов
+                            .list__lo Увеличение доли рынка
+                    +button("{crm_analytics:click_link(Подробнее о продвижении в регионы,#order,sk,Региональное продвижение)}", "Подробнее о продвижении в регионы", "heading_Button efficiency__btn", 'f')
+                .block__img.block__img_region
+                    img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/283199/content_illyustratsiya_karta.png' alt='MDN')

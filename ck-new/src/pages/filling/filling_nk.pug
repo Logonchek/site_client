@@ -1,0 +1,204 @@
+include ../../miksins.pug
+
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+		title= "Настройки компании"
+	body
+		.main-content
+			.width314px
+			.filling_page
+				.toolbar-rascal
+					p.section-h1 Наполнение сайта
+					//- p.toolbar-rascal__number.section-h2 8 800 234 43 10
+				header
+					.header
+						.block.section_block
+							.block-tariff
+								img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/305422/content_illyustratsiya.png", alt="")
+							.block-info  
+								p Сайт — это сердце интернет-продаж. Сюда поступают трафик и заказы, по нему судят о компании в целом. Ваша прибыль напрямую зависит от внешнего вида и функционала сайта.
+								p Хотите увеличивать прибыль? Улучшайте сайт! Как это сделать, расскажет специалист Пульса цен. Чтобы заказать бесплатную консультацию, нажмите кнопку и оставьте номер телефона. 
+								+button("{crm_analytics:click_link(Заказать консультацию по сайту,#order,sk,Консультация_тарифы)}", "Заказать консультацию по сайту", "heading_Button_zero",)
+					.consultant.section-block
+						img.consultant__img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/289170/content_content_small_1.png", alt="")
+						.consultant__info 
+							.consultant__name.fat Елена Толстова
+							.consultant__position #[i специалист Пульса цен]
+							.massenger_futer
+								img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/204255/content_r.png")
+								a(href="tel:88002344310").numder_toolbar.phone-js 8 800 234 43 10
+							.consultant__icon 
+								a(target="blank" href="https://wa.me/+79292690013").numder_futer
+									img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/289145/content_vats.png")
+								a(target="blank" href="viber://chat?number=+79292690013").numder_futer
+									img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/289146/content_vayber.png")
+								a(target="blank" href="mailto:tolstova@pulscen.ru").numder_futer
+									img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/289133/content_pochta.png")
+								a(target="blank" href="https://t.me/PulscenKC").numder_futer
+									img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/289128/content_telega.png")
+							.consultant__btn 
+								+button("{crm_analytics:click_link(Задать вопрос,#order,sk,Консультация_тарифы)}", "Задать вопрос", "heading_Button_zero",)
+				section.setting.delimiter
+					.content
+						.item-wrapper
+							a.item(href='http://{company:domain}/pages/new')
+								img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/305162/content_novaya_stranitsa_illyustratsiya.png' alt='')
+								.item__text-wrapper
+									p.item__heading.fat Создайте новую страницу или раздел
+									p.item__text Кликните на картинку, чтобы создать новую страницу или добавить раздел сайта.
+							.item
+								.noAccess(hidden_text="Будет доступно при покупке тарифа Старт и выше")
+									img.noAccess__img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/289500/content_arrow-default.png", alt="" )
+								.item_noAccent
+									img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/305163/content_slayder_illyustratsiya.png' alt='')
+									.item__text-wrapper
+										p.item__heading.fat Разместите слайдер на главной странице
+										p.item__text Быстро и эффективно доносит до покупателей информацию о скидках, акциях и новых товарах.
+				section.reviews-orders.delimiter
+					.order
+						p.section-h2.reviews-orders__heading Редактировать разделы сайта
+						.blocks
+							+block_extendedNote(
+								"",
+								"Акции", 
+								"",
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/305179/content_ill_aktsii.png", 
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/305423/content_ill_aktsii.png", 
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/305433/content_ill_aktsii.png",
+								'Разместите на сайте текущие акции и  спецпредложения для покупателей, чтобы привлечь их внимание и склонить к покупке.', 
+								"http://{company:domain}/sales",'action')
+							+block_extendedNote(
+								"",
+								"Новости", 
+								"",
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/305178/content_ill_novosti.png",
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/305424/content_ill_novosti.png", 
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/305435/content_ill_novosti.png",
+								'Рассказывайте обо всех новостях и достижениях. Это положительно сказывается на доверии покупателей.', 
+								"http://{company:domain}/news?admin_mode=true",'new')
+							+block_extendedNote(
+								"",
+								"Статьи", 
+								"",
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/305187/content_ill_stati.png",
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/305425/content_ill_stati.png", 
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/305436/content_ill_stati.png",
+								'Разместите полезные для покупателей статьи. Это может быть подробный обзор товаров и услуг, рассказ о новых технологиях, успешный кейс и тд.',
+								"http://{company:domain}/articles?admin_mode=true", 'article')
+							+block_extendedNote(
+								"",
+								"Видео", 
+								"",
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/305182/content_ill_video.png",
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/305411/content_ill_video.png", 
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/305437/content_ill_video.png", 
+								'Загружайте видеоотзывы или ролики о компании и товарах. Чтобы добавить видео, загрузите его на бесплатный видеохостинг (www.youtube.com или www.rutube.ru), нажмите «Поделиться» и скопируйте полученную ссылку.',
+								"http://{company:domain}/videos?admin_mode=true", 'video')
+						.blocks.blocks__BigText
+							+block_extendedNote(
+								"",
+								"Лицензии и сертификаты", 
+								"",
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/305450/content_ill_litsenzii_i_sertifikaty.png",
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/305427/content_ill_litsenzii_i_sertifikaty.png", 
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/305439/content_ill_litsenzii_i_sertifikaty.png", 
+								'Покажите клиентам уровень вашей квалификации, разместите на сайте дополнительную информацию о качестве ваших товаров и услуг.',
+								"http://{company:domain}/licenses?admin_mode=true",'sertif')
+							+block_extended_access(
+								"",
+								"Документы для скачивания", 
+								"",
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/305451/content_ill_dokumenty.png",
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/305431/content_ill_dokumenty.png", 
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/305438/content_ill_dokumenty.png", 
+								"http://{company:domain}/documents?admin_mode=true")
+							+block_extended_access(
+								"",
+								"Прайс-лист для скачивания", 
+								"",
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/305452/content_ill_prays.png",
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/305428/content_ill_prays.png", 
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/305440/content_ill_prays.png", 
+								"http://{company:domain}/prices?admin_mode=true")
+							+block_extendedNote(
+								"",
+								"Наши партнеры", 
+								"",
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/305453/content_ill_partnery.png", 
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/305430/content_ill_partnery.png", 
+								"https://www.pulscen.ru/system/ckeditor_assets/pictures/305441/content_ill_partnery.png",
+								'Расскажите посетителям вашего сайта о партнерах. Ссылки могут быть текстовыми или в виде HTML-кода.', 
+								"http://{company:domain}/links?admin_mode=true",'partner')
+					.order__end 
+						p Хотите, чтобы мы взяли на себя всю работу по созданию, наполнению и поддержке сайта? Тогда нажимайте на кнопку «Хочу эффективный сайт» и оставьте номер телефона для связи.
+						+button("{crm_analytics:click_link(Хочу эффективный сайт,#order,sk,Консультация_тарифы)}", "Хочу эффективный сайт", "heading_Button_zero end__btn",)
+				section.sale.switch-js#tariff-block
+					p.section-h1 Повышение эффективности размещения
+					p.subtitle Познакомиться с возможностями более высоких тарифов, чтобы выбрать выгодное размещение под свои задачи
+					.slider
+						.swiper.slider__sale
+							.swiper-wrapper
+								.swiper-slide
+									.block 
+										img.icon(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/283012/content_kalkulyator.png", alt="")
+										.block__grid
+											.block-info     
+												img.illustration(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/289504/content_illyustratsiya_start.png")
+												div
+													.block__heading.fat700.section-h2 Создание сайта
+													.block__subtitle На Пульс-цен вы можете создать полноценный сайт для продажи товаров и услуг через Интернет с техническим обслуживанием, созданный в разумные сроки.
+												.line
+												.list 
+													p.fat600.list__heading К возможностям тарифов добавляются следующие услуги:
+													.list__grid
+														.list__li Неограниченное количество товаров
+														.list__li От 1-го до 3-х дополнительных регионов для продвижения
+														.list__li Подключение и сопоставление до 5000 товаров с системами 1С, Мой склад и YML
+														.list__li Модули онлайн-оплаты и доставки и CRM Битрикс
+											a.templateSite(href='https://megasayt.pulscen.ru/?utm_source=pulscen_onlineshop&utm_medium=refer&utm_content=link&utm_campaign=onlineshop_link' target='_blank')
+												img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/305222/content_ikonka.png", alt="")
+												p Примеры сайтов
+											.tarifs.tarifs-start
+												//- img.tarifs-start__img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/286728/content_ellipse_59.png", alt="") 
+												.tarif
+													a.tarif__header.fat700(target="blank" href=" https://www.pulscen.ru/online-shop/site-start") 
+														p Тариф  “Старт”
+													.list
+														.list__li_circle Готовый продающий сайт
+														.list__li_circle  Теплая целевая аудитория 
+														.list__li_circle Пульса цен 
+														.list__li_circle Хостинг сайта на 1 год 
+														.list__li_circle Готовые шаблоны продающего дизайна для сайта
+													+buttonLink("Выбрать", "heading_Button efficiency__btn", " https://www.pulscen.ru/online-shop/site-start")
+												.tarif
+													a.tarif__header.fat700(target="blank" href="https://www.pulscen.ru/online-shop/site-business") 
+														p Тариф  “Бизнес”
+													.list
+														.list__li_circle Все из тарифа “Старт” 
+														.list__li_circle Уникальный дизайн
+														.list__li_circle SEO проработка
+														.list__li_circle Интеграция до 5 000 товаров с системами 1С, Мой склад и YML
+														.list__li_circle Техническая поддержка специалистов (1 год)
+													+buttonLink("Выбрать", "heading_Button efficiency__btn", "https://www.pulscen.ru/online-shop/site-business", "tab2-tariff", "tab2-tariff")
+												.tarif
+													a.tarif__header.fat700(target="blank" href="https://www.pulscen.ru/online-shop/site-all")  
+														p Тариф  “Все включено”
+													.list
+														.list__li_circle Все из тарифа “Бизнес”
+														.list__li_circle Ведение рекламной кампании в Яндекс и Google ( 3 мес.)
+														.list__li_circle Неограниченное количество товара
+														.list__li_circle Включены все сервисы интеграции
+														.list__li_circle Размещение товаров на площадках Пульс ценпо всей Россиибез приоритета.
+													+buttonLink("Выбрать", "heading_Button efficiency__btn", "https://www.pulscen.ru/online-shop/site-all")
+								
+					.sale__end
+						p.end__text Ознакомьтесь с полным перечнем услуг, входящих в тарифы Пульса цен, или закажите консультацию специалиста. 
+						.end__btn
+							+buttonLink("Подробнее о сайтах", "heading_Button",'https://www.pulscen.ru/online-shop/site')
+							+button("{crm_analytics:click_link(Заказать консультацию,#order,sk,Консультация_тарифы)}","Заказать консультацию", "heading_Button_zero")
+
+
+
+
